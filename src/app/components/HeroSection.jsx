@@ -40,8 +40,9 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={["Web Developer", 1000, "Backend Developer", 1000]}
               wrapper="span"
-              speed={50}
+              speed={40}
               repeat={Infinity}
+              style={{ fontSize: '50px' }}
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
