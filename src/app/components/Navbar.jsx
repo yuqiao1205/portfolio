@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
-import Image from "next/image";
+// import Image from "next/image";
 
 const navLinks = [
   {
@@ -32,7 +32,7 @@ const Navbar = () => {
           className="md:text-2xl text-white font-semibold"
         >
           
-          <Image
+          <img
             src="images/pylogo4.png"
             alt="pylogo"
             width={100} 
