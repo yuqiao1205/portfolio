@@ -75,7 +75,7 @@ const projectsData = [
       "The project involves developing and evaluating a Convolutional Neural Network (CNN) model for classifying handwritten digits from the well-known MNIST dataset. The CNN is trained to accurately recognize and classify the digits, showcasing its ability to effectively handle image classification tasks.",
     image: "images/projects/handwritting1.png",
     tag: ["All", "Deep Learning"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/yuqiao1205/handwriting-app",
     previewUrl: "/",
   },
 ];
