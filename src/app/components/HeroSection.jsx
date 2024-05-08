@@ -71,7 +71,7 @@ const HeroSection = () => {
             </a> */}
 
             <Link
-              href="/images/yan_resume_pink.pdf"
+              href="/portfolio/images/yan_resume_pink.pdf"
               download
               // href="/images/yan_resume_pink1.1.pdf"
               // to={resume}
@@ -92,7 +92,7 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#334155] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/py5.png"
+              src="/portfolio/images/py5.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
               // className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
