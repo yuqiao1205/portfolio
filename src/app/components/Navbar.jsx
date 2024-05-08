@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
-// import Image from "next/image";
 
 const navLinks = [
   {
@@ -35,8 +34,8 @@ const Navbar = () => {
           <img
             src="images/pylogo4.png"
             alt="pylogo"
-            width={100} 
-            height={100} 
+            width={70} 
+            height={70} 
             // style={{
             //   // position: "absolute",
             //   top: "10px", // Adjust as needed for vertical position
@@ -46,7 +45,7 @@ const Navbar = () => {
     
         </Link>
 
-        <p className="md:text-2xl text-white font-semibold" style={{ color: "#fff7ed", fontSize: "45px" }}>Yan Peng</p>
+        <p className="md:text-2xl font-semibold" style={{ color: "#e7e5e4", fontSize: "30px" }}>Yan Peng</p>
 
    
         <div className="mobile-menu block md:hidden">

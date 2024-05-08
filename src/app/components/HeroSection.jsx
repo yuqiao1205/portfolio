@@ -20,16 +20,15 @@ const HeroSection = () => {
 
             {/* Hello, I&apos;m{" "}
             </span> */}
+            
             <span
               style={{
                 // background: `-webkit-linear-gradient(left, #9C89B8, #F0A6CA, #EFC3E6, #F0E6EF)`,
-                // background: `-webkit-linear-gradient(left,#FFC8DD, #FFAFCC, #BDEOFE, #A2D2FF)`,
+                background: `-webkit-linear-gradient(left, #EDE342, #F2BF6C, #F69A97, #FB76C1, #FF51EB)`,
 
-                background: `-webkit-linear-gradient(left, #64A6BD, #90A8C3, #ADA7C9, #D7B9D5, #F4CAE0)`,
+                // background: `-webkit-linear-gradient(left, #64A6BD, #90A8C3, #ADA7C9, #D7B9D5, #F4CAE0)`,
                 // background: `-webkit-linear-gradient(left, #FFD6FF, #E7C6FF, #C8B6FF, #B8C0FF, #BBD0FF)`,
                 // background: `-webkit-linear-gradient(left, #10E0FF, #0086EB, #006EE9, #FFCD00, #FFEF00)`,
-
-
 
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
@@ -59,6 +58,8 @@ const HeroSection = () => {
                 Hire Me
               </button>
             </Link>
+            <br></br>
+            <br></br>
             {/* <a
               href={resume}
               download="yan_resume_pink1.1.pdf"
@@ -79,6 +80,7 @@ const HeroSection = () => {
               </button>
             </Link>
           </div>
+       <br></br><br></br>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -87,13 +89,14 @@ const HeroSection = () => {
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
           <div className="rounded-full bg-[#334155] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          
             <img
               src="images/yanprofile.jpg"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
               // className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={360}
-              height={350}
+              width={330}
+              height={320}
             />
           </div>
         </motion.div>
