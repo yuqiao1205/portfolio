@@ -33,7 +33,7 @@ const Navbar = () => {
         >
           
           <Image
-            src="/portfolio/images/pylogo4.png"
+            src="/images/pylogo4.png"
             alt="pylogo"
             width={100} 
             height={100} 
