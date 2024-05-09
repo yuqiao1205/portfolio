@@ -38,11 +38,11 @@ const HeroSection = () => {
             </span>
             <br></br>
             <TypeAnimation
-              sequence={["Web Developer", 1000, "Backend SWE", 1000, "Full-Stack SWE", 1000]}
+              sequence={["Web Dev", 1000, "Backend SWE", 1000, "Fullstack SWE", 1000]}
               wrapper="span"
               speed={40}
               repeat={Infinity}
-              style={{ fontSize: '40px' }}
+              style={{ fontSize: '35px' }}
             />
           </h1>
           <p className=" text-base sm:text-lg mb-6 lg:text-xl">
@@ -72,7 +72,7 @@ const HeroSection = () => {
             </a> */}
 
             <Link
-              href="images/yan_resume_pink.pdf"
+              href="/images/yan_resume_pink.pdf"
               download
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
             >
