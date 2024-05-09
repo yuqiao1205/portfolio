@@ -33,7 +33,7 @@ const projectsData = [
       "The project encompasses the implementation of a banking system featuring checking and savings accounts, as well as cash deposit functionality. It allows users to create various types of accounts, reset account details, view account information, and perform withdrawals. The project leverages JavaFX to create a user-friendly graphical interface for input, enhancing the overall user experience ",
     image: "images/projects/banksystem.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/yuqiao1205/advancedjava/tree/main/assigment1/BankingSystem/src",
     previewUrl: "/",
   },
   {
