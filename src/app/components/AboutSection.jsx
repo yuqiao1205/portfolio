@@ -39,6 +39,8 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Japanese-Language Proficiency N1</li>
         <li>Japanese-Business Certificate J2</li>
+        <br></br>
+     
       </ul>
     ),
   },
@@ -65,7 +67,7 @@ const AboutSection = () => {
         height={500}
       />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-pink mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-gray mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
           I&apos;m Originally from China, I have a passion for exploring diverse
           cultures and cuisines. Moreover, my fascination extends to the realms
@@ -96,8 +98,11 @@ const AboutSection = () => {
             >
               {" "}
               Certifications{" "}
+
             </TabButton>
+
           </div>
+          <br></br>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
