@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 const navLinks = [
   {
@@ -24,11 +25,12 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto border border-[#94a3b8] top-0 left-0 right-0 z-10 bg-[#1f2939] bg-opacity-100">
+    <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#1f2939] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+        <DarkModeSwitch />
         <Link
           href={"/"}
-          className="md:text-2xl text-white font-semibold"
+          className="md:text-2xl font-semibold"
         >
           
           <img
@@ -36,14 +38,10 @@ const Navbar = () => {
             alt="pylogo"
             width={70} 
             height={70} 
-            // style={{
-            //   // position: "absolute",
-            //   top: "10px", // Adjust as needed for vertical position
-            //   left: "10px", // Adjust as needed for horizontal position
-            // }}
           />
     
         </Link>
+     
 
         <p className="md:text-2xl font-semibold" style={{ color: "#e7e5e4", fontSize: "30px" }}>Yan Peng</p>
 

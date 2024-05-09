@@ -1,12 +1,18 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
+// import GithubIcon from "../../../public/github-icon.svg";
+// import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const theme = 'dark'; // You should replace this with your actual logic to get the current theme
+
+  // Define the color of the GitHub icon based on the current theme
+  const githubColor = theme === 'dark' ? '#cbd5e1' : '#f1f5f9';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,37 +45,7 @@ const EmailSection = () => {
     }
   };
 
-  // return (
-  //   <section
-  //     id="contact"
-  //     className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
-  //   >
-  //     <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-  //     <div className="z-10">
-  //       <h5 className="text-xl font-bold text-white my-2">
-  //         Let&apos;s Connect
-  //       </h5>
-  //       <p className="text-[#ADB7BE] mb-4 max-w-md">
-  //         {" "}
-  //         I&apos;m currently looking for new opportunities, my inbox is always
-  //         open. Whether you have a question or just want to say hi, I&apos;ll
-  //         try my best to get back to you!
-  //       </p>
-  //       <div className="socials flex flex-row gap-2">
-  //         <Link href="https://github.com/yuqiao1205">
-  //           <Image src={GithubIcon} alt="Github Icon" />
-  //         </Link>
-  //         <Link href="https://www.linkedin.com/in/yan-peng-b40b82307/">
-  //           <Image src={LinkedinIcon} alt="Linkedin Icon" />
-  //         </Link>
-  //       </div>
-  //     </div>
-  //     <div>
-  //       <h1 className="text-4xl font-bold text-white mb-4">Get in Touch</h1>
-  //     </div>
-      
-  //   </section>
-  // );
+
   return (
     <section
       id="contact"
@@ -77,10 +53,10 @@ const EmailSection = () => {
     >
       <div className="h-60 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">
+        <h5 className="text-xl font-bold my-2">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <p className="text-[#94a3b8] mb-4 max-w-md">
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
@@ -89,16 +65,18 @@ const EmailSection = () => {
        
       </div>
       <div>
-        <h1 className="text-4xl font-bold text-white mb-4">Get in Touch</h1>
-        <h2 className="text-[#ADB7BE] mb-4 max-w-md">
-          You can also reach me at <a href="mailto:loran1226@gmail.com" className="text-white underline">loran1226@gmail.com</a>.
+        <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
+        <h2 className="text-[#94a3b8] mb-4 max-w-md">
+          You can also reach me at <a href="mailto:loran1226@gmail.com" className="text-[#55a4dd] underline">loran1226@gmail.com</a>.
         </h2>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/yuqiao1205">
-            <Image src={GithubIcon} alt="Github Icon" /><span style={{ color: 'white' }}>GitHub</span>
+          <FaGithub size={32} color={githubColor} />
+            {/* <Image src={GithubIcon} alt="Github Icon" /><span>GitHub</span> */}
           </Link>
           <Link href="https://www.linkedin.com/in/yan-peng-b40b82307/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" /><span style={{ color: 'white' }}>Linkedin</span>
+            {/* <Image src={LinkedinIcon} alt="Linkedin Icon" /><span>Linkedin</span> */}
+            <FaLinkedin size={32} color="#0077b5" />
           </Link>
         </div>
       </div>
