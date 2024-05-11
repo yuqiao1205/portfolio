@@ -42,7 +42,7 @@ const projectsData = [
       "Brick Game Application - Javascript Based Application using HTML, CSS, and JS.",
     description:
       "The project encompasses the implementation of a brick game with features such as point calculation, increasing ball speeds for each level, and progressing to the next level upon eliminating all blocks. Keyboard and mouse controls are integrated into the game, enhancing user interaction and gameplay experience. The game's design focuses on providing engaging gameplay while challenging players with progressively difficult levels, ensuring an enjoyable and immersive gaming experience. ",
-    image: "images/projects/brickgame.png",
+    image: "images/projects/brickgame2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/brickgame",
     previewUrl: "/",
