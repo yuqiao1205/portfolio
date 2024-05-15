@@ -37,9 +37,10 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
+        <li>Artificial Intelligence Professioanal Certification</li>
         <li>Japanese-Language Proficiency N1</li>
         <li>Japanese-Business Certificate J2</li>
-        <br></br>
+      
      
       </ul>
     ),
