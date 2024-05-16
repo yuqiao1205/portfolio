@@ -20,7 +20,7 @@ const HeroSection = () => {
 
             {/* Hello, I&apos;m{" "}
             </span> */}
-            
+
             <span
               style={{
                 // background: `-webkit-linear-gradient(left, #9C89B8, #F0A6CA, #EFC3E6, #F0E6EF)`,
@@ -38,16 +38,23 @@ const HeroSection = () => {
             </span>
             <br></br>
             <TypeAnimation
-              sequence={["Web Dev", 1000, "Backend SWE", 1000, "Fullstack SWE", 1000]}
+              sequence={[
+                "Web Dev",
+                1000,
+                "Backend SWE",
+                1000,
+                "Fullstack SWE",
+                1000,
+              ]}
               wrapper="span"
               speed={40}
               repeat={Infinity}
-              style={{ fontSize: '35px' }}
+              style={{ fontSize: "35px" }}
             />
           </h1>
           <p className=" text-base sm:text-lg mb-6 lg:text-xl">
-            An energetic and passionate undergraduate student seeking an
-            internship as a software engineer opportunity.
+            An energetic and passionate undergraduate CS major student seeking
+            an internship as a software engineer opportunity.
           </p>
           <div>
             <Link
@@ -81,7 +88,8 @@ const HeroSection = () => {
               </button>
             </Link>
           </div>
-       <br></br><br></br>
+          <br></br>
+          <br></br>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -90,7 +98,6 @@ const HeroSection = () => {
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
           <div className="rounded-full bg-[#334155] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-          
             <img
               src="images/yanprofile.jpg"
               alt="hero image"

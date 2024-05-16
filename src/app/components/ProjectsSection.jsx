@@ -3,23 +3,66 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 
 const projectsData = [
+  // {
+  //   id: 1,
+  //   title: "TravelWise - Using React for the frontend, with a Node.js backend and MySQL database deploy to Azure.",
+  //   description:
+  //   (<p> This application transcends traditional blogging by seamlessly integrating advanced features tailored for modern travelers. Alongside standard blogging functionalities, it incorporates cutting-edge technologies, including an AI-powered travel chatbot for personalized recommendations, vision feature for destination identification, automated question answering, and real-time weather updates with country info checks, enhancing trip planning. Complemented by essential project components such as the <Link href="/images/travelwise_plan.pdf" download>TravelWise project plan</Link>,<Link href="link_to_download_pdf_for_testing_document" download>testing document</a>,</u> <u><a href="link_to_download_pdf_for_design_architecture" download>design architecture</a>,</u> <u><a href="link_to_download_pdf_for_REST_API_design" download>REST API design</a>,</u> <u><a href="link_to_download_pdf_for_UML_diagrams" download>UML diagrams</a>,</u> and <u><a href="link_to_download_pdf_for_UX_flows" download>UX flows</a>,</u> our platform offers a comprehensive solution for seamless travel exploration, revolutionizing the user experience from planning to execution.</p>),
+  //   image: "images/projects/travelwise.jpg",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "https://github.com/yuqiao1205/blogproject",
+  //   previewUrl: "https://tp2024.westus3.cloudapp.azure.com/",
+  //   worksUrl: "https://tp2024.westus3.cloudapp.azure.com/",
+  // },
   {
     id: 1,
-    title: "TravelWise - Using React for the frontend, with a Node.js backend and MySQL database deploy to Azure.",
-    description:
-      " The blog app not only provides traditional blog features but also offers users with a unique experience by integrating cutting-edge features such as an AI-powered travel chatbot for personalized recommendations, AI-powered vision feature for destination identification and assistance, automated question answering for seamless information retrieval, and real-time weather updates with counrtry info checks to enhance trip planning.",
+    title: "TravelWise - React, Nodejs, Express, MySQL, Azure.",
+    description: (
+      <span>
+        This application revolutionizes travel blogging by seamlessly
+        integrating advanced features tailored for modern travelers, including
+        an AI-powered chatbot for personalized recommendations, destination
+        vision feature, and real-time weather updates, enhancing trip planning.
+        Complemented by essential project components such as the{" "}
+        <Link
+          href="/images/travelwise_plan.pdf"
+          download
+          className="text-sm underline text-pink-500"
+        >
+          TravelWise project plan
+        </Link>
+        ,{" "}
+        <Link
+          href="/images/travelwise_testing.pdf"
+          download
+          className="text-sm underline text-pink-500"
+        >
+          Testing Document
+        </Link>
+        ,{" "}
+        <Link
+          href="/images/travelwise_design.pdf"
+          download
+          className="text-sm underline text-pink-500"
+        >
+          architecture & REST API design & UML/UX Flows.
+        </Link>
+      </span>
+    ),
     image: "images/projects/travelwise.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/blogproject",
     previewUrl: "https://tp2024.westus3.cloudapp.azure.com/",
     worksUrl: "https://tp2024.westus3.cloudapp.azure.com/",
   },
+
   {
     id: 2,
     title:
-      "Photo Gallery - Image Post Web Application with nodejs backend and MySQL database.",
+      "Photo Gallery - Nodejs, Express, Javascript, MySQL, Handlebar, CSS, HTML.",
     description:
       "The project implements a range of features catering to both unregistered and registered users, including login, register, post images, search, and make comments functionalities. Unregistered users can browse and search for content, while registered users gain additional capabilities such as posting images and making comments. The system offers a seamless and engaging experience, allowing users to interact with the platform's content in a dynamic and user-friendly manner.",
     image: "images/projects/imagepost.png",
@@ -47,14 +90,14 @@ const projectsData = [
       "The project encompasses the implementation of a banking system featuring checking and savings accounts, as well as cash deposit functionality. It allows users to create various types of accounts, reset account details, view account information, and perform withdrawals. The project leverages JavaFX to create a user-friendly graphical interface for input, enhancing the overall user experience ",
     image: "images/projects/banksystem.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/yuqiao1205/advancedjava/tree/main/assigment1/BankingSystem/src",
+    gitUrl:
+      "https://github.com/yuqiao1205/advancedjava/tree/main/assigment1/BankingSystem/src",
     previewUrl: "",
     worksUrl: "",
   },
   {
     id: 5,
-    title:
-      "Brick Game Application - Javascript Based Application using HTML, CSS, and JS.",
+    title: "Brick Game Application - Javascript, HTML, CSS",
     description:
       "The project encompasses the implementation of a brick game with features such as point calculation, increasing ball speeds for each level, and progressing to the next level upon eliminating all blocks. Keyboard and mouse controls are integrated into the game, enhancing user interaction and gameplay experience. The game's design focuses on providing engaging gameplay while challenging players with progressively difficult levels, ensuring an enjoyable and immersive gaming experience. ",
     image: "images/projects/brickgame2.png",
@@ -65,7 +108,7 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Calculator Application - Java Based Application.",
+    title: "Calculator Application - Java, Java Swing GUI.",
     description:
       "The project involves implementing an infix expression evaluator using Java, with a focus on essential mathematical functions and utilizing two stacks. Additionally, a Java Swing GUI is created to provide a user-friendly interface for calculator input. This approach allows users to input complex mathematical expressions in infix notation, which are then evaluated accurately. The project enhances user experience by providing a visually appealing and intuitive way to perform calculations. ",
     image: "images/projects/calculator1.png",
@@ -76,8 +119,7 @@ const projectsData = [
   },
   {
     id: 7,
-    title:
-      "User Management System - Spring Boot Application with MySQL Database and React Frontend.",
+    title: "User Management System - Spring Boot, MySQL, React.",
     description:
       "This Spring Boot application manages users with CRUD operations, utilizing a MySQL database and a React frontend. It enables creating, reading, updating, and deleting user accounts, ensuring efficient user data management. The React frontend provides a user-friendly interface for seamless interaction with the system.",
     image: "images/projects/usersystem.png",
