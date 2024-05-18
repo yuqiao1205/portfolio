@@ -43,34 +43,9 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  // {
-  //   title: "Design-Documents",
-  //   id: "designdocuments",
-  //   content: (
-  //     <ul className="list-disc pl-2">
-  //       <li>
-  //         <Link href="/images/travelwise_design.pdf" passHref>
-  //           Download TravelWise App Data Architecture & RestAPI Design & UML &
-  //           UX Flows
-  //         </Link>
-  //       </li>
-
-  //       <li>
-  //         <Link href="/images/travelwise_testing.pdf" passHref>
-  //           Download TravelWise App Testing Document
-  //         </Link>
-  //       </li>
-  //       <li>
-  //         <Link href="/images/travelwise_plan.pdf" passHref>
-  //           Download TravelWise App Project Plan
-  //         </Link>
-  //       </li>
-  //     </ul>
-  //   ),
-  // },
   {
     title: "PPT",
-    id: "presentationppt",
+    id: "ppts",
     content: (
       <ul className="list-disc pl-2">
         <li>
@@ -163,8 +138,8 @@ const AboutSection = () => {
             </TabButton>
        
             <TabButton
-              selectTab={() => handleTabChange("presentationppt")}
-              active={tab === "PPT"}
+              selectTab={() => handleTabChange("ppts")}
+              active={tab === "ppt"}
             >
               {" "}
               PPT{" "}
