@@ -74,7 +74,7 @@ const EmailSection = () => {
           <FaGithub size={32} color={githubColor} />
             {/* <Image src={GithubIcon} alt="Github Icon" /><span>GitHub</span> */}
           </Link>
-          <Link href="https://www.linkedin.com/in/lauren-peng-32b15330a/">
+          <Link href="https://www.linkedin.com/in/lauren-yanpeng/">
             {/* <Image src={LinkedinIcon} alt="Linkedin Icon" /><span>Linkedin</span> */}
             <FaLinkedin size={32} color="#0077b5" />
           </Link>
