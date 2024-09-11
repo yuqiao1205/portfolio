@@ -1,15 +1,14 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
-
 const EmailSection = () => {
-    const theme = 'dark'; // You should replace this with your actual logic to get the current theme
+  const theme = "dark"; // You should replace this with your actual logic to get the current theme
 
-    // Define the color of the GitHub icon based on the current theme
-    const githubColor = theme === 'dark' ? '#cbd5e1' : '#f1f5f9';
+  // Define the color of the GitHub icon based on the current theme
+  const githubColor = theme === "dark" ? "#cbd5e1" : "#f1f5f9";
   return (
     <section
       id="contact"
@@ -28,17 +27,20 @@ const EmailSection = () => {
         <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
         <h2 className="text-[#94a3b8] mb-4 max-w-md">
           You can also reach me at{" "}
-          <a href="mailto:loran1226@gmail.com" className="text-[#55a4dd] underline">
+          <a
+            href="mailto:loran1226@gmail.com"
+            className="text-[#55a4dd] underline"
+          >
             loran1226@gmail.com
           </a>
           .
         </h2>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/yuqiao1205">
-          <FaGithub size={32} color={githubColor} />
+            <FaGithub size={32} color={githubColor} />
             <span>GitHub</span>
           </Link>
-          <Link href="https://www.linkedin.com/in/yan-peng-b40b82307/">
+          <Link href="https://www.linkedin.com/in/laurenpy/">
             <FaLinkedin size={32} color="#0077b5" />
             <span>Linkedin</span>
           </Link>
