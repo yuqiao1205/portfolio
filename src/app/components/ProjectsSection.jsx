@@ -134,7 +134,7 @@ const projectsData = [
     description:
       "The project involves developing and evaluating a Convolutional Neural Network (CNN) model for classifying handwritten digits from the well-known MNIST dataset. The CNN is trained to accurately recognize and classify the digits, showcasing its ability to effectively handle image classification tasks.",
     image: "images/projects/handwritting1.png",
-    tag: ["All", "Deep Learning"],
+    tag: ["All", "DL"],
     gitUrl: "https://github.com/yuqiao1205/handwriting-app",
     previewUrl: "",
     worksUrl: "",
@@ -146,7 +146,7 @@ const projectsData = [
     description:
       "NameThePlace is a cutting-edge mobile app built with React Native and Expo, integrating AI and serverless technologies. With Clerk for secure authentication, the app lets you effortlessly pick a photo from your phone to identify the location. Using advanced AI, it provides detailed information about the place, complete with a map view for easy navigation. Personalize your experience by adding fun emojis to your photos before saving or sharing. PhotoPlace seamlessly combines technology and simplicity, offering a smart way to discover places through your photos",
     image: "images/projects/nameplace.png",
-    tag: ["All", "Mobile App"],
+    tag: ["All", "Mobile"],
     gitUrl:
       "https://github.com/yuqiao1205/name-the-place-mobile-app-react-native",
     previewUrl:
@@ -159,7 +159,7 @@ const projectsData = [
     description:
       "MovieMate is a mobile app built with React Native that keeps you updated with the latest movies using the TMDB API. Discover what’s currently showing in theaters and get a sneak peek at upcoming releases. With a clean, user-friendly interface, MovieMate provides movie details, ratings, and trailers, making it your go-to app for all things cinema.",
     image: "images/projects/movieapp7.png",
-    tag: ["All", "Mobile App"],
+    tag: ["All", "Mobile"],
     gitUrl: "https://github.com/yuqiao1205/movie-mobile-app",
     previewUrl:
       "https://expo.dev/preview/update?message=update%20movie%20app&updateRuntimeVersion=1.0.0&createdAt=2024-09-10T23%3A27%3A52.420Z&slug=exp&projectId=4644d62d-00b4-4aab-86f9-d6ca81345ff4&group=0be7175e-54b4-4e08-84f7-e68e7fb29c5a",
@@ -204,12 +204,12 @@ const ProjectsSection = () => {
         <ProjectTag
           onClick={handleTagChange}
           name="DL"
-          isSelected={tag === "Deep Learning"}
+          isSelected={tag === "DL"}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="Mobile"
-          isSelected={tag === "Mobile App"}
+          isSelected={tag === "Mobile"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
