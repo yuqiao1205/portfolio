@@ -72,6 +72,17 @@ const projectsData = [
     worksUrl: "",
   },
   {
+    id: 11,
+    title: "EventHub - SpringBoot, Mybatis, React, Material UI, MySQL.",
+    description:
+      "EventHub is a web application built using SpringBoot, MyBatis, React, Material UI, and MySQL. It provides full CRUD functionality for managing events, categories, and articles. Users can also update personal settings such as profile pictures, passwords, and other user information. The application is fully responsive, ensuring a seamless experience across different devices.",
+    image: "images/projects/eventhome.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/yuqiao1205/springboot_event",
+    previewUrl: "",
+    worksUrl: "",
+  },
+  {
     id: 3,
     title:
       "Movie Review - Nextjs with IMDB API, responsive design and a dark mode switch.",
