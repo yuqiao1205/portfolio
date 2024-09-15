@@ -6,17 +6,6 @@ import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 
 const projectsData = [
-  // {
-  //   id: 1,
-  //   title: "TravelWise - Using React for the frontend, with a Node.js backend and MySQL database deploy to Azure.",
-  //   description:
-  //   (<p> This application transcends traditional blogging by seamlessly integrating advanced features tailored for modern travelers. Alongside standard blogging functionalities, it incorporates cutting-edge technologies, including an AI-powered travel chatbot for personalized recommendations, vision feature for destination identification, automated question answering, and real-time weather updates with country info checks, enhancing trip planning. Complemented by essential project components such as the <Link href="/images/travelwise_plan.pdf" download>TravelWise project plan</Link>,<Link href="link_to_download_pdf_for_testing_document" download>testing document</a>,</u> <u><a href="link_to_download_pdf_for_design_architecture" download>design architecture</a>,</u> <u><a href="link_to_download_pdf_for_REST_API_design" download>REST API design</a>,</u> <u><a href="link_to_download_pdf_for_UML_diagrams" download>UML diagrams</a>,</u> and <u><a href="link_to_download_pdf_for_UX_flows" download>UX flows</a>,</u> our platform offers a comprehensive solution for seamless travel exploration, revolutionizing the user experience from planning to execution.</p>),
-  //   image: "images/projects/travelwise.jpg",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "https://github.com/yuqiao1205/blogproject",
-  //   previewUrl: "https://tp2024.westus3.cloudapp.azure.com/",
-  //   worksUrl: "https://tp2024.westus3.cloudapp.azure.com/",
-  // },
   {
     id: 1,
     title: "TravelWise - React, Nodejs, Express, MySQL, Azure.",
@@ -52,7 +41,11 @@ const projectsData = [
         </Link>
       </span>
     ),
-    image: "images/projects/travelwise.jpg",
+    // image: "images/projects/travelwise.jpg",
+    imgUrls: [
+      "images/projects/travelwise.jpg", // Now we use an array of images
+      "images/projects/travelwise.jpg", // Add additional images here
+    ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/blogproject",
     previewUrl: "https://tp2024.westus3.cloudapp.azure.com/",
@@ -76,7 +69,12 @@ const projectsData = [
     title: "EventHub - SpringBoot, Mybatis, React, Material UI, MySQL.",
     description:
       "EventHub is a web application built using SpringBoot, MyBatis, React, Material UI, and MySQL. It provides full CRUD functionality for managing events, categories, and articles. Users can also update personal settings such as profile pictures, passwords, and other user information. The application is fully responsive, ensuring a seamless experience across different devices.",
-    image: "images/projects/eventhome.png",
+    // image: "images/projects/eventhome.png",
+    imgUrls: [
+      "images/projects/eventhome.png", // Now we use an array of images
+      "images/projects/eventhome2.png", // Add additional images here
+      "images/projects/eventhome3.png",
+    ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/springboot_event",
     previewUrl: "",
@@ -236,7 +234,8 @@ const ProjectsSection = () => {
               key={project.id}
               title={project.title}
               description={project.description}
-              imgUrl={project.image}
+              // imgUrl={project.image}
+              imgUrls={project.imgUrls} // Pass multiple images as an array
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
               worksUrl={project.worksUrl}

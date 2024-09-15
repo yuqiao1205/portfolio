@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-// import GithubIcon from "../../../public/github-icon.svg";
-// import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import GithubIcon from "../../../public/github.svg";
+import LinkedinIcon from "../../../public/linkedin.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -72,15 +72,18 @@ const EmailSection = () => {
         </h2>
         <div className="socials flex flex-row gap-2">
           <a href="https://github.com/yuqiao1205">
-            <FaGithub size={32} color={githubColor} />
-            {/* <Image src={GithubIcon} alt="Github Icon" /><span>GitHub</span> */}
+            {/* <FaGithub size={32} color={githubColor} /> */}
+            <Image src={GithubIcon} alt="Github Icon" />
+            <span>GitHub</span>
           </a>
           <a
             href="https://www.linkedin.com/in/laurenpy/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin size={32} color="#0077b5" />
+            {/* <FaLinkedin size={32} color="#0077b5" /> */}
+            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <span>LinkedIn</span>
           </a>
         </div>
       </div>
