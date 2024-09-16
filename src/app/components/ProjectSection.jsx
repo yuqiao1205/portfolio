@@ -43,8 +43,20 @@ const projectsData = [
       </span>
     ),
     imgUrls: [
-      "images/projects/travelwise.jpg", // Now we use an array of images
-      "images/projects/travelwise.jpg", // Add additional images here
+      "images/projects/blog/blog-home04.png",
+      "images/projects/blog/blog-home03.png", // Now we use an array of images
+      "images/projects/blog/blog-add.png", // Add additional images here
+      "images/projects/blog/blog-single2.png",
+      "images/projects/blog/blog-singlecomment.png",
+      "images/projects/blog/blog-userProfile.png",
+      "images/projects/blog/blog-updateaccount.png",
+      "images/projects/blog/blog-weather01.png",
+      "images/projects/blog/blog-yelpsearch.png",
+      "images/projects/blog/blog-destation.png",
+      "images/projects/blog/blog-chat.png",
+      "images/projects/blog/blog-login.png",
+      "images/projects/blog/blog-theme.png",
+      "images/projects/blog/blog-favorite.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/blogproject",
@@ -110,7 +122,7 @@ const projectsData = [
     title: "Banking System - Java Application for Banking System.",
     description:
       "The project encompasses the implementation of a banking system featuring checking and savings accounts, as well as cash deposit functionality. It allows users to create various types of accounts, reset account details, view account information, and perform withdrawals. The project leverages JavaFX to create a user-friendly graphical interface for input, enhancing the overall user experience ",
-    image: "images/projects/banksystem.png",
+    imgUrls: ["images/projects/banksystem.png"],
     tag: ["All", "Web"],
     gitUrl:
       "https://github.com/yuqiao1205/advancedjava/tree/main/assigment1/BankingSystem/src",
@@ -122,7 +134,10 @@ const projectsData = [
     title: "Brick Game Application - Javascript, HTML, CSS",
     description:
       "The project encompasses the implementation of a brick game with features such as point calculation, increasing ball speeds for each level, and progressing to the next level upon eliminating all blocks. Keyboard and mouse controls are integrated into the game, enhancing user interaction and gameplay experience. The game's design focuses on providing engaging gameplay while challenging players with progressively difficult levels, ensuring an enjoyable and immersive gaming experience. ",
-    image: "images/projects/brickgame2.png",
+    imgUrls: [
+      "images/projects/brickgame-home.png",
+      "images/projects/brickgame-login.png",
+    ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/brickgame",
     previewUrl: "https://brickgame-two.vercel.app/",
