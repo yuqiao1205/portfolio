@@ -128,7 +128,7 @@ const projectsData = [
     title: "Banking System - Java Application for Banking System.",
     description:
       "The project encompasses the implementation of a banking system featuring checking and savings accounts, as well as cash deposit functionality. It allows users to create various types of accounts, reset account details, view account information, and perform withdrawals. The project leverages JavaFX to create a user-friendly graphical interface for input, enhancing the overall user experience ",
-    imgUrls: ["images/projects/banksystem.png"],
+    imgUrls: ["images/projects/bankaccount/banksystem.png"],
     tag: ["All", "Web"],
     gitUrl:
       "https://github.com/yuqiao1205/advancedjava/tree/main/assigment1/BankingSystem/src",
@@ -169,7 +169,11 @@ const projectsData = [
     title: "User Management System - Spring Boot, MySQL, React.",
     description:
       "This Spring Boot application manages users with CRUD operations, utilizing a MySQL database and a React frontend. It enables creating, reading, updating, and deleting user accounts, ensuring efficient user data management. The React frontend provides a user-friendly interface for seamless interaction with the system.",
-    imgUrls: ["images/projects/usersystem.png"],
+    imgUrls: [
+      "images/projects/rating/ratinghome001.png",
+      "images/projects/rating/ratingadd001.png",
+      "images/projects/rating/ratingupdate001.png",
+    ],
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "",
@@ -210,7 +214,10 @@ const projectsData = [
     title: "MovieMate Mobile App - React Native, Expo, TMDB.",
     description:
       "MovieMate is a mobile app built with React Native that keeps you updated with the latest movies using the TMDB API. Discover what’s currently showing in theaters and get a sneak peek at upcoming releases. With a clean, user-friendly interface, MovieMate provides movie details, ratings, and trailers, making it your go-to app for all things cinema.",
-    imgUrls: ["images/projects/movie_mobileapp/movie_review.png"],
+    imgUrls: [
+      "images/projects/movie_mobileapp/movie_review.png",
+      "images/projects/movie_mobileapp/moviemobile001.png",
+    ],
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/yuqiao1205/movie-mobile-app",
     previewUrl:
