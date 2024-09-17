@@ -43,14 +43,14 @@ const projectsData = [
       </span>
     ),
     imgUrls: [
-      "images/projects/blog/blog-home04.png",
-      "images/projects/blog/blog-home03.png", // Now we use an array of images
-      "images/projects/blog/blog-add.png", // Add additional images here
-      "images/projects/blog/blog-single2.png",
+      "images/projects/blog/blog-home5.png",
+      "images/projects/blog/blog-home6.png", // Now we use an array of images
+      "images/projects/blog/blog-add2.png", // Add additional images here
+      "images/projects/blog/blog-single01.png",
       "images/projects/blog/blog-singlecomment.png",
-      "images/projects/blog/blog-userProfile.png",
+      "images/projects/blog/blog-userprofile.png",
       "images/projects/blog/blog-updateaccount.png",
-      "images/projects/blog/blog-weather01.png",
+      "images/projects/blog/blog-weather.png",
       "images/projects/blog/blog-yelpsearch.png",
       "images/projects/blog/blog-destation.png",
       "images/projects/blog/blog-chat.png",
@@ -71,15 +71,15 @@ const projectsData = [
       "EventHub is a web application built using SpringBoot, MyBatis, React, Material UI, and MySQL. It provides full CRUD functionality for managing events, categories, and articles. Users can also update personal settings such as profile pictures, passwords, and other user information. The application is fully responsive, ensuring a seamless experience across different devices.",
 
     imgUrls: [
-      "images/projects/event_welcome.png",
-      "images/projects/event_landing.png", // Now we use an array of images
+      "images/projects/events/event-home.png",
+      "images/projects/events/event-welcome.png", // Now we use an array of images
 
-      "images/projects/event_article.png", // Add additional images here
-      "images/projects/event_userinfo.png",
-      "images/projects/event_updateuser.png",
-      "images/projects/event_updatepassword.png",
-      "images/projects/event_addcat.png",
-      "images/projects/event_addarticle.png",
+      "images/projects/events/event-article.png", // Add additional images here
+      "images/projects/events/event-userinfo.png",
+      "images/projects/events/event-updatepicture.png",
+      "images/projects/events/event-updatepassword.png",
+      "images/projects/events/event_addcat.png",
+      "images/projects/events/event_addarticle.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/springboot_event",
@@ -107,10 +107,10 @@ const projectsData = [
       "The Next.js project uses a 3rd party IMDB API to fetch movie data and enable searching, creating a seamless interface. It includes a section for top-rated and trending movies, offering curated recommendations. The app's responsive design provides a comprehensive movie review platform, allowing users to explore detailed information, ratings, and reviews. Additionally, the app features a dark mode option for enhanced viewing comfort in low-light environments.",
     // image: "images/projects/moviereview-dark.png",
     imgUrls: [
-      "images/projects/movie-reviewhome2.png",
-      "images/projects/movie-reviewlight1.png",
-      "images/projects/movie-reviewsingle1.png",
-      "images/projects/movie-reviewlightsingle1.png",
+      "images/projects/movieweb/movieweb-darkhome.png",
+      "images/projects/movieweb/movieweb-lighthome.png",
+      "images/projects/movieweb/movieweb-darksingle.png",
+      "images/projects/movieweb/movieweb-lightsingle.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/movie-review",
@@ -135,8 +135,8 @@ const projectsData = [
     description:
       "The project encompasses the implementation of a brick game with features such as point calculation, increasing ball speeds for each level, and progressing to the next level upon eliminating all blocks. Keyboard and mouse controls are integrated into the game, enhancing user interaction and gameplay experience. The game's design focuses on providing engaging gameplay while challenging players with progressively difficult levels, ensuring an enjoyable and immersive gaming experience. ",
     imgUrls: [
-      "images/projects/brickgame-home.png",
-      "images/projects/brickgame-login.png",
+      "images/projects/brickgame/brickgame-home.png",
+      "images/projects/brickgame/brickgame-login.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/brickgame",
@@ -182,7 +182,12 @@ const projectsData = [
       "Images Identify Mobile App - React Native, Expo, Serverless, Clerk, AI Intergation.",
     description:
       "NameThePlace is a cutting-edge mobile app built with React Native and Expo, integrating AI and serverless technologies. With Clerk for secure authentication, the app lets you effortlessly pick a photo from your phone to identify the location. Using advanced AI, it provides detailed information about the place, complete with a map view for easy navigation. Personalize your experience by adding fun emojis to your photos before saving or sharing. PhotoPlace seamlessly combines technology and simplicity, offering a smart way to discover places through your photos",
-    image: "images/projects/nameplace.png",
+    imgUrls: [
+      "images/projects/imagephone/imageapp1.png",
+      "images/projects/imagephone/imageapp2.png",
+      "images/projects/imagephone/imageapp3.png",
+      "images/projects/imagephone/imageapp4.png",
+    ],
     tag: ["All", "Mobile"],
     gitUrl:
       "https://github.com/yuqiao1205/name-the-place-mobile-app-react-native",
@@ -225,7 +230,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12">
-        My Projects 2
+        My All Projects
       </h2>
       <div className="flex flex-row justify-center items-center gap-1 py-5">
         <ProjectTag
