@@ -60,8 +60,8 @@ const projectsData = [
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/blogproject",
-    previewUrl: "https://tp2024.westus3.cloudapp.azure.com/",
-    worksUrl: "https://tp2024.westus3.cloudapp.azure.com/",
+    previewUrl: "",
+    worksUrl: "",
   },
 
   {
@@ -124,17 +124,40 @@ const projectsData = [
     worksUrl: "https://movie-review-kappa-ten.vercel.app/",
   },
   {
-    id: 4,
-    title: "Banking System - Java Application for Banking System.",
+    id: 9,
+    title:
+      "Images Identify Mobile App - React Native, Expo, Serverless, Clerk, AI Intergation.",
     description:
-      "The project encompasses the implementation of a banking system featuring checking and savings accounts, as well as cash deposit functionality. It allows users to create various types of accounts, reset account details, view account information, and perform withdrawals. The project leverages JavaFX to create a user-friendly graphical interface for input, enhancing the overall user experience ",
-    imgUrls: ["images/projects/bankaccount/banksystem.png"],
-    tag: ["All", "Web"],
+      "NameThePlace is a cutting-edge mobile app built with React Native and Expo, integrating AI and serverless technologies. With Clerk for secure authentication, the app lets you effortlessly pick a photo from your phone to identify the location. Using advanced AI, it provides detailed information about the place, complete with a map view for easy navigation. Personalize your experience by adding fun emojis to your photos before saving or sharing. PhotoPlace seamlessly combines technology and simplicity, offering a smart way to discover places through your photos",
+    imgUrls: [
+      "images/projects/imagephone/imageapp1.png",
+      "images/projects/imagephone/imageapp2.png",
+      "images/projects/imagephone/imageapp3.png",
+      "images/projects/imagephone/imageapp4.png",
+    ],
+    tag: ["All", "Mobile"],
     gitUrl:
-      "https://github.com/yuqiao1205/advancedjava/tree/main/assigment1/BankingSystem/src",
-    previewUrl: "",
+      "https://github.com/yuqiao1205/name-the-place-mobile-app-react-native",
+    previewUrl:
+      "https://expo.dev/preview/update?message=map%20back%20to%20imagedetail&updateRuntimeVersion=1.0.0&createdAt=2024-09-11T01%3A59%3A30.131Z&slug=exp&projectId=79f57895-d818-411a-a5f2-b75174f07a66&group=501a98dc-e40f-4e7d-9e30-d00df3c0a2cd",
     worksUrl: "",
   },
+  {
+    id: 10,
+    title: "MovieMate Mobile App - React Native, Expo, TMDB.",
+    description:
+      "MovieMate is a mobile app built with React Native that keeps you updated with the latest movies using the TMDB API. Discover what’s currently showing in theaters and get a sneak peek at upcoming releases. With a clean, user-friendly interface, MovieMate provides movie details, ratings, and trailers, making it your go-to app for all things cinema.",
+    imgUrls: [
+      "images/projects/movie_mobileapp/movie_review.png",
+      "images/projects/movie_mobileapp/moviemobile001.png",
+    ],
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/yuqiao1205/movie-mobile-app",
+    previewUrl:
+      "https://expo.dev/preview/update?message=update%20movie%20app&updateRuntimeVersion=1.0.0&createdAt=2024-09-10T23%3A27%3A52.420Z&slug=exp&projectId=4644d62d-00b4-4aab-86f9-d6ca81345ff4&group=0be7175e-54b4-4e08-84f7-e68e7fb29c5a",
+    worksUrl: "",
+  },
+
   {
     id: 5,
     title: "Brick Game Application - Javascript, HTML, CSS",
@@ -191,37 +214,15 @@ const projectsData = [
     worksUrl: "",
   },
   {
-    id: 9,
-    title:
-      "Images Identify Mobile App - React Native, Expo, Serverless, Clerk, AI Intergation.",
+    id: 4,
+    title: "Banking System - Java Application for Banking System.",
     description:
-      "NameThePlace is a cutting-edge mobile app built with React Native and Expo, integrating AI and serverless technologies. With Clerk for secure authentication, the app lets you effortlessly pick a photo from your phone to identify the location. Using advanced AI, it provides detailed information about the place, complete with a map view for easy navigation. Personalize your experience by adding fun emojis to your photos before saving or sharing. PhotoPlace seamlessly combines technology and simplicity, offering a smart way to discover places through your photos",
-    imgUrls: [
-      "images/projects/imagephone/imageapp1.png",
-      "images/projects/imagephone/imageapp2.png",
-      "images/projects/imagephone/imageapp3.png",
-      "images/projects/imagephone/imageapp4.png",
-    ],
-    tag: ["All", "Mobile"],
+      "The project encompasses the implementation of a banking system featuring checking and savings accounts, as well as cash deposit functionality. It allows users to create various types of accounts, reset account details, view account information, and perform withdrawals. The project leverages JavaFX to create a user-friendly graphical interface for input, enhancing the overall user experience ",
+    imgUrls: ["images/projects/bankaccount/banksystem.png"],
+    tag: ["All", "Web"],
     gitUrl:
-      "https://github.com/yuqiao1205/name-the-place-mobile-app-react-native",
-    previewUrl:
-      "https://expo.dev/preview/update?message=map%20back%20to%20imagedetail&updateRuntimeVersion=1.0.0&createdAt=2024-09-11T01%3A59%3A30.131Z&slug=exp&projectId=79f57895-d818-411a-a5f2-b75174f07a66&group=501a98dc-e40f-4e7d-9e30-d00df3c0a2cd",
-    worksUrl: "",
-  },
-  {
-    id: 10,
-    title: "MovieMate Mobile App - React Native, Expo, TMDB.",
-    description:
-      "MovieMate is a mobile app built with React Native that keeps you updated with the latest movies using the TMDB API. Discover what’s currently showing in theaters and get a sneak peek at upcoming releases. With a clean, user-friendly interface, MovieMate provides movie details, ratings, and trailers, making it your go-to app for all things cinema.",
-    imgUrls: [
-      "images/projects/movie_mobileapp/movie_review.png",
-      "images/projects/movie_mobileapp/moviemobile001.png",
-    ],
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/yuqiao1205/movie-mobile-app",
-    previewUrl:
-      "https://expo.dev/preview/update?message=update%20movie%20app&updateRuntimeVersion=1.0.0&createdAt=2024-09-10T23%3A27%3A52.420Z&slug=exp&projectId=4644d62d-00b4-4aab-86f9-d6ca81345ff4&group=0be7175e-54b4-4e08-84f7-e68e7fb29c5a",
+      "https://github.com/yuqiao1205/advancedjava/tree/main/assigment1/BankingSystem/src",
+    previewUrl: "",
     worksUrl: "",
   },
 ];
