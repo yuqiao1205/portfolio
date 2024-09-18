@@ -48,7 +48,7 @@ const projectsData = [
       "images/projects/blog/blog-add2.png", // Add additional images here
       "images/projects/blog/blog-single01.png",
       "images/projects/blog/blog-singlecomment.png",
-      "images/projects/blog/blog-userprofile.png",
+      "images/projects/blog/blog-userprofile1.png",
       "images/projects/blog/blog-updateaccount.png",
       "images/projects/blog/blog-weather.png",
       "images/projects/blog/blog-yelpsearch.png",
