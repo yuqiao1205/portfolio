@@ -79,7 +79,7 @@ const HeroSection = () => {
             </a> */}
 
             <Link
-              href="/images/yan_resume_pink.pdf"
+              href="/images/yan_newresume.pdf"
               download
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
             >
