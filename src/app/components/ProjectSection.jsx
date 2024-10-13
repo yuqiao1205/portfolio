@@ -59,7 +59,7 @@ const projectsData = [
       "images/projects/blog/blog-favorite.png",
     ],
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/yuqiao1205/blogproject",
+    gitUrl: "https://github.com/yuqiao1205/travelwise",
     previewUrl: "",
     worksUrl: "",
   },
