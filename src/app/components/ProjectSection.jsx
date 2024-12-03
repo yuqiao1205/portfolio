@@ -140,7 +140,7 @@ const projectsData = [
     gitUrl:
       "https://github.com/yuqiao1205/name-the-place-mobile-app-react-native",
     previewUrl:
-      "https://expo.dev/preview/update?message=map%20back%20to%20imagedetail&updateRuntimeVersion=1.0.0&createdAt=2024-09-11T01%3A59%3A30.131Z&slug=exp&projectId=79f57895-d818-411a-a5f2-b75174f07a66&group=501a98dc-e40f-4e7d-9e30-d00df3c0a2cd",
+      "https://expo.dev/preview/update?message=update%20to%20new%20expo%20verison%20run%20all&updateRuntimeVersion=1.0.0&createdAt=2024-11-29T19%3A31%3A05.291Z&slug=exp&projectId=79f57895-d818-411a-a5f2-b75174f07a66&group=aace4b11-c636-42c6-813a-ef0b465dc5e9",
     worksUrl: "",
   },
   {
