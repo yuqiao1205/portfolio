@@ -8,15 +8,17 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col]">
+    <main className="flex min-h-screen flex-col">
       <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="pt-16"> {/* Add top padding to account for fixed navbar */}
         <HeroSection />
-        {/* <AchievementsSection /> */}
-        <AboutSection />
-        <ProjectSection />
-        <EmailSection />
-        <Footer />
+        <div className="container mx-auto px-4 xl:px-16">
+          {/* <AchievementsSection /> */}
+          <AboutSection />
+          <ProjectSection />
+          <EmailSection />
+          <Footer />
+        </div>
       </div>
     </main>
   );

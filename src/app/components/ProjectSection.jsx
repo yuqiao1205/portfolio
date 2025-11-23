@@ -247,11 +247,16 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12">
-        My All Projects
-      </h2>
-      <div className="flex flex-row justify-center items-center gap-1 py-5">
+    <section id="projects" className="py-16 px-4 xl:px-16">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent mb-4">
+          My Projects
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
+          A showcase of my work across web development, mobile apps, and machine learning projects.
+        </p>
+      </div>
+      <div className="flex flex-wrap justify-center items-center gap-2 mb-12">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -273,21 +278,20 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.2, delay: index * 0.4 }}
+            transition={{ duration: 0.3, delay: index * 0.1 }}
           >
             <ProjectCard
-              className="color"
               key={project.id}
               title={project.title}
               description={project.description}
-              imgUrls={project.imgUrls} // Pass multiple images as an array
+              imgUrls={project.imgUrls}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
               worksUrl={project.worksUrl}

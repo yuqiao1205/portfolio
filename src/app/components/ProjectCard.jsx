@@ -16,99 +16,73 @@ const ProjectCard = ({
   worksUrl,
 }) => {
   return (
-    <div className="max-w-sm mx-auto">
-      {/* Project Image Section */}
-      <div className="relative overflow-hidden h-52 md:h-72 pr-14">
-        {imgUrls.length > 0 ? (
-          <Swiper
-            modules={[Navigation, Pagination]}
-            spaceBetween={10}
-            slidesPerView={1}
-            loop={true}
-            navigation
-            pagination={{ clickable: true }}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 5,
-              },
-              480: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              640: {
-                slidesPerView: 1,
-                spaceBetween: 15,
-              },
-              768: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              1024: {
-                slidesPerView: 1,
-                spaceBetween: 30,
-              },
-            }}
-            className="h-full"
-          >
-            {imgUrls.map((imgUrl, index) => (
-              <SwiperSlide key={index}>
-                <div
-                  className="h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${imgUrl})`,
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                  }}
-                ></div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        ) : (
-          <div
-            className="h-full bg-cover bg-center"
-            style={{
-              backgroundImage: `url('/defaultImage.jpg')`,
-              //   height: "300px", // Set a fixed height for default image on larger screens
-            }}
-          ></div>
-        )}
-      </div>
+    <div className="max-w-sm mx-auto group">
+      <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+        {/* Project Image Section */}
+        <div className="relative overflow-hidden h-52 md:h-72">
+          {imgUrls.length > 0 ? (
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={10}
+              slidesPerView={1}
+              loop={true}
+              navigation
+              pagination={{ clickable: true }}
+              className="h-full"
+            >
+              {imgUrls.map((imgUrl, index) => (
+                <SwiperSlide key={index}>
+                  <div
+                    className="h-full bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url(${imgUrl})`,
+                      backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "center",
+                    }}
+                  ></div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          ) : (
+            <div className="h-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
+              <span className="text-slate-400">No Image</span>
+            </div>
+          )}
 
-      {/* Icons Section */}
-      <div className="flex justify-center items-center py-2 pr-10">
-        <Link
-          href={gitUrl}
-          className="h-14 w-14 mr-4 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-        >
-          <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
-        </Link>
-        {previewUrl ? (
-          <Link
-            href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-          >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
-          </Link>
-        ) : (
-          <div className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] group">
-            <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#ADB7BE] text-sm">
-              Soon
-            </span>
+          {/* Overlay with icons */}
+          <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <Link
+              href={gitUrl}
+              className="p-2 bg-black/50 backdrop-blur-sm rounded-full border border-cyan-400/30 hover:border-cyan-400 transition-colors duration-200"
+            >
+              <CodeBracketIcon className="h-5 w-5 text-cyan-400" />
+            </Link>
+            {previewUrl ? (
+              <Link
+                href={previewUrl}
+                className="p-2 bg-black/50 backdrop-blur-sm rounded-full border border-cyan-400/30 hover:border-cyan-400 transition-colors duration-200"
+              >
+                <EyeIcon className="h-5 w-5 text-cyan-400" />
+              </Link>
+            ) : (
+              <div className="p-2 bg-black/50 backdrop-blur-sm rounded-full border border-slate-500/30">
+                <span className="text-xs text-slate-400">Soon</span>
+              </div>
+            )}
           </div>
-        )}
-      </div>
+        </div>
 
-      {/* Project Details Section */}
-      <div className="rounded-b-xl mt-3 py-6 px-4">
-        <h5 className="text-lg md:text-xl font-semibold mb-2">{title}</h5>
-        <h4 className="text-lg md:text-xl font-semibold mb-2">
-          <Link href={worksUrl} className="text-sm underline text-pink-400">
-            {worksUrl}
-          </Link>
-        </h4>
-        <p className="text-sm md:text-base text-[#94a3b8]">{description}</p>
+        {/* Project Details Section */}
+        <div className="p-6">
+          <h5 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">{title}</h5>
+          {worksUrl && (
+            <Link href={worksUrl} className="text-sm text-cyan-400 hover:text-cyan-300 underline mb-3 block">
+              View Live Demo
+            </Link>
+          )}
+          <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 line-clamp-3">{description}</p>
+        </div>
       </div>
     </div>
   );

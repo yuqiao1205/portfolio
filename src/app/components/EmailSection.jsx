@@ -1,90 +1,108 @@
-"use client";
-import React, { useState } from "react";
-import GithubIcon from "../../../public/github.svg";
-import LinkedinIcon from "../../../public/linkedin.svg";
-import Link from "next/link";
-import Image from "next/image";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import React from "react";
+import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
-  const theme = "dark"; // You should replace this with your actual logic to get the current theme
-
-  // Define the color of the GitHub icon based on the current theme
-  const githubColor = theme === "dark" ? "#cbd5e1" : "#f1f5f9";
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
-  };
-
   return (
-    <section
-      id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
-    >
-      <div className="h-60 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-10">
-        <h5 className="text-xl font-bold my-2">Let&apos;s Connect</h5>
-        <p className="text-[#94a3b8] mb-4 max-w-md">
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+    <section id="contact" className="py-16 px-4 xl:px-16">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent mb-4">
+          Get In Touch
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
+          I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+          Feel free to reach out!
         </p>
       </div>
-      <div>
-        <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
-        <h2 className="text-[#94a3b8] mb-4 max-w-md">
-          You can also reach me at{" "}
-          <a
-            href="mailto:loran1226@gmail.com"
-            className="text-[#55a4dd] underline"
-          >
-            loran1226@gmail.com
-          </a>
-          .
-        </h2>
-        <div className="socials flex flex-row gap-2">
-          <a href="https://github.com/yuqiao1205">
-            {/* <FaGithub size={32} color={githubColor} /> */}
-            <Image src={GithubIcon} alt="Github Icon" />
-            <span>GitHub</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/laurenpy/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {/* <FaLinkedin size={32} color="#0077b5" /> */}
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
-            <span>LinkedIn</span>
-          </a>
+
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-8 border border-slate-700">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Contact Information */}
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <FaEnvelope className="text-cyan-400 mr-4 text-xl" />
+                    <div>
+                      <p className="text-gray-300 text-sm">Email</p>
+                      <a
+                        href="mailto:loran1226@gmail.com"
+                        className="text-cyan-400 hover:text-cyan-300 transition-colors text-lg font-medium"
+                      >
+                        loran1226@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <FaMapMarkerAlt className="text-cyan-400 mr-4 text-xl" />
+                    <div>
+                      <p className="text-gray-300 text-sm">Location</p>
+                      <p className="text-white text-lg font-medium">San Francisco, CA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-bold text-white mb-4">Connect With Me</h4>
+                <div className="flex space-x-4">
+                  <a
+                    href="https://github.com/yuqiao1205"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 py-2 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors group"
+                  >
+                    <FaGithub className="text-cyan-400 mr-2 text-lg group-hover:scale-110 transition-transform" />
+                    <span className="text-gray-300 group-hover:text-cyan-400 transition-colors">GitHub</span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/laurenpy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 py-2 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors group"
+                  >
+                    <FaLinkedin className="text-cyan-400 mr-2 text-lg group-hover:scale-110 transition-transform" />
+                    <span className="text-gray-300 group-hover:text-cyan-400 transition-colors">LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Professional Summary */}
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-4">Let's Work Together</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  I'm currently seeking new opportunities as a software engineer. Whether you're looking to
+                  collaborate on an exciting project, discuss potential job opportunities, or just want to
+                  connect with someone passionate about technology, I'd love to hear from you.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-bold text-white mb-3">What I'm Looking For</h4>
+                <ul className="text-gray-300 space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-cyan-400 mr-2">•</span>
+                    Full-time software engineering positions
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-400 mr-2">•</span>
+                    Collaborative project opportunities
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-400 mr-2">•</span>
+                    Technical discussions and networking
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-400 mr-2">•</span>
+                    Mentorship and learning opportunities
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
