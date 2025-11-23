@@ -60,14 +60,12 @@ const HeroSection = () => {
             <Link
               href="#contact"
               // className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 mb-4 sm:mb-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
             >
               <button className="block  hover:bg-slate-800 rounded-full px-5 py-2">
                 Hire Me
               </button>
             </Link>
-            <br></br>
-            <br></br>
             {/* <a
               href={resume}
               download="yan_resume_pink1.1.pdf"
@@ -81,10 +79,20 @@ const HeroSection = () => {
             <Link
               href="/images/yan_newresume.pdf"
               download
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 mb-4 sm:mb-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
             >
               <button className="block hover:bg-slate-800 rounded-full px-5 py-2">
                 Download Resume
+              </button>
+            </Link>
+            <Link
+              href="https://techblog-pi-opal.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+            >
+              <button className="block hover:bg-slate-800 rounded-full px-5 py-2">
+                Visit My Tech Blog
               </button>
             </Link>
           </div>
