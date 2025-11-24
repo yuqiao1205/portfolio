@@ -26,6 +26,7 @@ const TAB_DATA = [
         <li className="w-1/4">SpringBoot</li>
         <li className="w-1/4">MySQL</li>
         <li className="w-1/4">MongoDB</li>
+        <li className="w-1/4">AI Agent</li>
       </ul>
     ),
   },
