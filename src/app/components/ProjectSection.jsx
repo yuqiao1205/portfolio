@@ -247,7 +247,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="py-16 px-4 xl:px-16">
+    <section id="projects" className="py-16 px-4 xl:px-16 scroll-mt-16">
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent mb-4">
           My Projects
