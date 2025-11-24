@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="grid grid-cols-3 gap-4 ">
+      <ul className="grid grid-cols-3 gap-4 text-pink-200">
         <li className="w-1/4">Java</li>
         <li className="w-1/4">Node.js</li>
         <li className="w-1/4">Express</li>
@@ -34,7 +34,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <div className="space-y-2 text-gray-300">
+      <div className="space-y-2 text-white">
         <div className="flex items-center">
           <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></div>
           <span>Bachelor's degree: Computer Science</span>
@@ -54,7 +54,7 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <div className="space-y-2 text-gray-300">
+      <div className="space-y-2 text-white">
         <div className="flex items-center">
           <div className="w-2 h-2 bg-pink-400 rounded-full mr-3"></div>
           <span>AI Professional Certification</span>
@@ -77,19 +77,19 @@ const TAB_DATA = [
       <div className="space-y-3">
         <Link
           href="/images/solid_ppt.pdf"
-          className="block p-3 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors duration-200 text-cyan-400 hover:text-cyan-300"
+          className="block p-3 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors duration-200 text-yellow-400 hover:text-cyan-300"
         >
           📊 SOLID Principles Presentation
         </Link>
         <Link
           href="/images/dp_ppt.pdf"
-          className="block p-3 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors duration-200 text-cyan-400 hover:text-cyan-300"
+          className="block p-3 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors duration-200 text-yellow-400 hover:text-cyan-300"
         >
           🤖 Handwritten Digit Recognition
         </Link>
         <Link
           href="/images/onlineshop_ppt.pdf"
-          className="block p-3 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors duration-200 text-cyan-400 hover:text-cyan-300"
+          className="block p-3 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors duration-200 text-yellow-400 hover:text-cyan-300"
         >
           🛒 OnlineShop Database Presentation
         </Link>
@@ -173,7 +173,7 @@ const AboutSection = () => {
               Presentations
             </TabButton>
           </div>
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-600">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>

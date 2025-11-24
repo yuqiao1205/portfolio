@@ -18,6 +18,10 @@ const navLinks = [
     title: "Contact",
     path: "#contact",
   },
+   {
+     title: "TechFlow",
+     path: "https://techblog-pi-opal.vercel.app/",
+   },
 ];
 
 const Navbar = () => {
@@ -77,7 +81,7 @@ const Navbar = () => {
         >
 
           <img
-            src="images/pylogo4.png"
+            src="images/pylogo7.png"
             alt="pylogo"
             width={70}
             height={70}
