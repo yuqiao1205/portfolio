@@ -1,11 +1,3 @@
-"use client";
-
-import React, { useState, useRef } from "react";
-import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
-import { motion, useInView } from "framer-motion";
-import Link from "next/link";
-
 const projectsData = [
   {
     id: 1,
@@ -17,35 +9,35 @@ const projectsData = [
         an AI-powered chatbot for personalized recommendations, destination
         vision feature, and real-time weather updates, enhancing trip planning.
         Complemented by essential project components such as the{" "}
-        <Link
+        <a
           href="/images/travelwise_plan.pdf"
           download
           className="text-sm underline text-pink-500"
         >
           TravelWise project plan
-        </Link>
+        </a>
         ,{" "}
-        <Link
+        <a
           href="/images/travelwise_testing.pdf"
           download
           className="text-sm underline text-pink-500"
         >
           Testing Document
-        </Link>
+        </a>
         ,{" "}
-        <Link
+        <a
           href="/images/travelwise_design.pdf"
           download
           className="text-sm underline text-pink-500"
         >
           architecture & REST API design & UML/UX Flows.
-        </Link>
+        </a>
       </span>
     ),
     imgUrls: [
       "images/projects/blog/blog-home5.png",
-      "images/projects/blog/blog-home6.png", // Now we use an array of images
-      "images/projects/blog/blog-add2.png", // Add additional images here
+      "images/projects/blog/blog-home6.png",
+      "images/projects/blog/blog-add2.png",
       "images/projects/blog/blog-single01.png",
       "images/projects/blog/blog-singlecomment.png",
       "images/projects/blog/blog-userprofile1.png",
@@ -63,18 +55,15 @@ const projectsData = [
     previewUrl: "",
     worksUrl: "",
   },
-
   {
     id: 11,
     title: "EventHub - SpringBoot, Mybatis, React, Material UI, MySQL.",
     description:
       "EventHub is a web application built using SpringBoot, MyBatis, React, Material UI, and MySQL. It provides full CRUD functionality for managing events, categories, and articles. Users can also update personal settings such as profile pictures, passwords, and other user information. The application is fully responsive, ensuring a seamless experience across different devices.",
-
     imgUrls: [
       "images/projects/events/event-home.png",
-      "images/projects/events/event-welcome.png", // Now we use an array of images
-
-      "images/projects/events/event-article.png", // Add additional images here
+      "images/projects/events/event-welcome.png",
+      "images/projects/events/event-article.png",
       "images/projects/events/event-userinfo.png",
       "images/projects/events/event-updatepicture.png",
       "images/projects/events/event-updatepassword.png",
@@ -100,7 +89,6 @@ const projectsData = [
       "images/projects/imagepost/imagepost-addpost.png",
       "images/projects/imagepost/imagepost-single.png",
     ],
-    // image: "images/projects/imagepost.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/photo-site",
     previewUrl: "",
@@ -112,7 +100,6 @@ const projectsData = [
       "Movie Review - Nextjs with IMDB API, responsive design and a dark mode switch.",
     description:
       "The Next.js project uses a 3rd party IMDB API to fetch movie data and enable searching, creating a seamless interface. It includes a section for top-rated and trending movies, offering curated recommendations. The app's responsive design provides a comprehensive movie review platform, allowing users to explore detailed information, ratings, and reviews. Additionally, the app features a dark mode option for enhanced viewing comfort in low-light environments.",
-    // image: "images/projects/moviereview-dark.png",
     imgUrls: [
       "images/projects/movieweb/movieweb-darkhome.png",
       "images/projects/movieweb/movieweb-lighthome.png",
@@ -147,7 +134,7 @@ const projectsData = [
     id: 10,
     title: "MovieMate Mobile App - React Native, Expo, TMDB.",
     description:
-      "MovieMate is a mobile app built with React Native that keeps you updated with the latest movies using the TMDB API. Discover what’s currently showing in theaters and get a sneak peek at upcoming releases. With a clean, user-friendly interface, MovieMate provides movie details, ratings, and trailers, making it your go-to app for all things cinema.",
+      "MovieMate is a mobile app built with React Native that keeps you updated with the latest movies using the TMDB API. Discover what's currently showing in theaters and get a sneak peek at upcoming releases. With a clean, user-friendly interface, MovieMate provides movie details, ratings, and trailers, making it your go-to app for all things cinema.",
     imgUrls: [
       "images/projects/movie_mobileapp/movie_review.png",
       "images/projects/movie_mobileapp/moviemobile001.png",
@@ -158,7 +145,6 @@ const projectsData = [
       "https://expo.dev/preview/update?message=update%20movie%20app&updateRuntimeVersion=1.0.0&createdAt=2024-09-10T23%3A27%3A52.420Z&slug=exp&projectId=4644d62d-00b4-4aab-86f9-d6ca81345ff4&group=0be7175e-54b4-4e08-84f7-e68e7fb29c5a",
     worksUrl: "",
   },
-
   {
     id: 5,
     title: "Brick Game Application - Javascript, HTML, CSS",
@@ -228,80 +214,4 @@ const projectsData = [
   },
 ];
 
-const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  const handleTagChange = (newTag) => {
-    setTag(newTag);
-  };
-
-  const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
-  );
-
-  const cardVariants = {
-    initial: { y: 50, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-  };
-
-  return (
-    <section id="projects" className="py-16 px-4 xl:px-16">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent mb-4">
-          My Projects
-        </h2>
-        <p className="text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
-          A showcase of my work across web development, mobile apps, and machine learning projects.
-        </p>
-      </div>
-      <div className="flex flex-wrap justify-center items-center gap-2 mb-12">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="DL"
-          isSelected={tag === "DL"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
-      </div>
-      <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProjects.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
-          >
-            <ProjectCard
-              key={project.id}
-              id={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrls={project.imgUrls}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-              worksUrl={project.worksUrl}
-            />
-          </motion.li>
-        ))}
-      </ul>
-    </section>
-  );
-};
-
-export default ProjectsSection;
+export default projectsData;

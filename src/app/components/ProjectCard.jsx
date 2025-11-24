@@ -1,13 +1,9 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 const ProjectCard = ({
+  id,
   imgUrls = [],
   title,
   description,
@@ -21,29 +17,15 @@ const ProjectCard = ({
         {/* Project Image Section */}
         <div className="relative overflow-hidden h-40 md:h-56">
           {imgUrls.length > 0 ? (
-            <Swiper
-              modules={[Navigation, Pagination]}
-              spaceBetween={10}
-              slidesPerView={1}
-              loop={true}
-              navigation
-              pagination={{ clickable: true }}
-              className="h-full"
-            >
-              {imgUrls.map((imgUrl, index) => (
-                <SwiperSlide key={index}>
-                  <div
-                    className="h-full bg-cover bg-center"
-                    style={{
-                      backgroundImage: `url(${imgUrl})`,
-                      backgroundSize: "cover",
-                      backgroundRepeat: "no-repeat",
-                      backgroundPosition: "center",
-                    }}
-                  ></div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <div
+              className="h-full bg-cover bg-center"
+              style={{
+                backgroundImage: `url(${imgUrls[0]})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+              }}
+            ></div>
           ) : (
             <div className="h-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
               <span className="text-slate-400">No Image</span>
@@ -76,6 +58,12 @@ const ProjectCard = ({
         {/* Project Details Section */}
         <div className="p-6">
           <h5 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">{title}</h5>
+          <Link
+            href={`/projects/${id}`}
+            className="text-sm text-cyan-400 hover:text-cyan-300 underline mb-3 block font-medium"
+          >
+            View Full Details →
+          </Link>
           {worksUrl && (
             <Link href={worksUrl} className="text-sm text-cyan-400 hover:text-cyan-300 underline mb-3 block">
               View Live Demo
