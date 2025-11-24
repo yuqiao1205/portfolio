@@ -82,8 +82,8 @@ const Navbar = () => {
           <img
             src="images/pylogo7.png"
             alt="pylogo"
-            width={70}
-            height={70}
+            width={50}
+            height={50}
             className="rounded-full"
           />
 
