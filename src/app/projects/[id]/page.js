@@ -33,11 +33,11 @@ const ProjectDetailPage = ({ params }) => {
       <div className="bg-white dark:bg-gray-800 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <Link
-            href="/"
+            href="/#projects"
             className="inline-flex items-center text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300 mb-4"
           >
             <ArrowLeftIcon className="h-5 w-5 mr-2" />
-            Back to Projects
+            Back to Projects Section
           </Link>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
             {project.title}
