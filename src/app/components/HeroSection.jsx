@@ -77,6 +77,15 @@ const HeroSection = () => {
             </Link>
 
             <Link
+              href="https://yuqiao1205.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              View Live Resume
+            </Link>
+
+            <Link
               href="https://techblog-pi-opal.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
