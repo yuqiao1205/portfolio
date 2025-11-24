@@ -73,11 +73,10 @@ const Navbar = () => {
         boxShadow: navbarOpacity > 0 ? '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)' : 'none'
       }}
     >
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <DarkModeSwitch />
+      <div className="flex container lg:py-4 flex-wrap items-center mx-auto px-4 py-2">
         <Link
           href={"/"}
-          className="md:text-2xl font-semibold hover:scale-105 transition-transform duration-200"
+          className="md:text-2xl font-semibold transition-transform duration-200"
         >
 
           <img
@@ -85,50 +84,57 @@ const Navbar = () => {
             alt="pylogo"
             width={70}
             height={70}
+            className="rounded-full"
           />
 
         </Link>
 
+        <p className="flex-1 text-center md:text-2xl font-semibold text-gray-900 dark:text-white fontSize: 30px">Yan Peng</p>
 
-        <p className="md:text-2xl font-semibold text-gray-900 dark:text-white fontSize: 30px">Yan Peng</p>
-
-
-        <div className="mobile-menu block md:hidden relative">
-          <button
-            onClick={() => setNavbarOpen(!navbarOpen)}
-            className="relative w-12 h-12 bg-gradient-to-br from-cyan-500/30 to-pink-500/30 dark:from-cyan-500/30 dark:to-pink-500/30 backdrop-blur-sm rounded-xl border-2 border-cyan-400/40 hover:border-cyan-400/60 dark:border-cyan-400/30 dark:hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 group shadow-lg dark:shadow-none"
-          >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-6 h-5 flex flex-col justify-between transform transition-all duration-300 group-hover:scale-110">
-                <span
-                  className={`block h-0.5 w-6 bg-gray-700 dark:bg-white rounded-sm transform transition-all duration-300 ${
-                    navbarOpen ? 'rotate-45 translate-y-2.5' : '-translate-y-1'
-                  }`}
-                ></span>
-                <span
-                  className={`block h-0.5 bg-gray-700 dark:bg-white rounded-sm transform transition-all duration-300 ${
-                    navbarOpen ? 'opacity-0' : 'opacity-100'
-                  }`}
-                  style={{ width: navbarOpen ? '0' : '1.5rem' }}
-                ></span>
-                <span
-                  className={`block h-0.5 w-6 bg-gray-700 dark:bg-white rounded-sm transform transition-all duration-300 ${
-                    navbarOpen ? '-rotate-45 -translate-y-2.5' : 'translate-y-1'
-                  }`}
-                ></span>
+        <div className="flex items-center space-x-2">
+     
+          <div className="mobile-menu block md:hidden relative ml-4">
+            <button
+              onClick={() => setNavbarOpen(!navbarOpen)}
+              className="relative w-12 h-12 bg-gradient-to-br from-cyan-500/30 to-pink-500/30 dark:from-cyan-500/30 dark:to-pink-500/30 backdrop-blur-sm rounded-xl border-2 border-cyan-400/40 hover:border-cyan-400/60 dark:border-cyan-400/30 dark:hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 group shadow-lg dark:shadow-none"
+            >
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-6 h-5 flex flex-col justify-between transform transition-all duration-300 group-hover:scale-110">
+                  <span
+                    className={`block h-0.5 w-6 bg-gray-700 dark:bg-white rounded-sm transform transition-all duration-300 ${
+                      navbarOpen ? 'rotate-45 translate-y-2.5' : '-translate-y-1'
+                    }`}
+                  ></span>
+                  <span
+                    className={`block h-0.5 bg-gray-700 dark:bg-white rounded-sm transform transition-all duration-300 ${
+                      navbarOpen ? 'opacity-0' : 'opacity-100'
+                    }`}
+                    style={{ width: navbarOpen ? '0' : '1.5rem' }}
+                  ></span>
+                  <span
+                    className={`block h-0.5 w-6 bg-gray-700 dark:bg-white rounded-sm transform transition-all duration-300 ${
+                      navbarOpen ? '-rotate-45 -translate-y-2.5' : 'translate-y-1'
+                    }`}
+                  ></span>
+                </div>
               </div>
-            </div>
-          </button>
+            </button>
+
+          </div>
+          <div className="menu hidden md:block md:w-auto ml-4" id="navbar">
+            <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+              {navLinks.map((link, index) => (
+                <li key={index}>
+                  <NavLink href={link.path} title={link.title} />
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink href={link.path} title={link.title} />
-              </li>
-            ))}
-          </ul>
+        <div className="ml-4">
+          <DarkModeSwitch />
         </div>
+
       </div>
        {navbarOpen ? <MenuOverlay links={navLinks} onClose={() => setNavbarOpen(false)} /> : null}
     </nav>
