@@ -19,7 +19,7 @@ const ProjectCard = ({
     <div className="max-w-sm mx-auto group">
       <div className="bg-gradient-to-br from-cyan-200 to-pink-200 dark:from-slate-800 dark:to-slate-900 backdrop-blur-sm rounded-xl border border-cyan-300 dark:border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
         {/* Project Image Section */}
-        <div className="relative overflow-hidden h-52 md:h-72">
+        <div className="relative overflow-hidden h-40 md:h-56">
           {imgUrls.length > 0 ? (
             <Swiper
               modules={[Navigation, Pagination]}
