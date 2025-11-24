@@ -7,19 +7,16 @@ const variants = {
 };
 
 const TabButton = ({ active, selectTab, children }) => {
-  // when the button is active, the text color will be white
-  const buttonClasses = active ? "text-[#fb923c]" : "text-[#ADB7BE]";
-
   return (
-    <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-[#f97316] ${buttonClasses}`}>
-        {children}
-      </p>
-      <motion.div
-        animate={active ? "active" : "default"}
-        variants={variants}
-        className="h-1 bg-primary-300 mt-2 mr-3"
-      ></motion.div>
+    <button
+      onClick={selectTab}
+      className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ${
+        active
+          ? "text-cyan-400 bg-cyan-400/10 border border-cyan-400/30"
+          : "text-gray-300 hover:text-cyan-400 hover:bg-cyan-400/10"
+      }`}
+    >
+      {children}
     </button>
   );
 };

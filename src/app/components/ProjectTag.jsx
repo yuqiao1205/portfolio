@@ -2,17 +2,13 @@ import React from "react";
 import { useTheme } from "next-themes";
 
 const ProjectTag = ({ name, onClick, isSelected }) => {
-  const { theme } = useTheme();
-  const isDarkMode = theme === "dark";
-
-  const buttonStyles = isSelected
-    ? "border-primary-500"
-    : isDarkMode
-    ? "text-[#ADB7BE] border-slate-600 hover:border-white"
-    : "text-[#ADB7BE] border-slate-600 hover:border-[#a5f3fc]";
   return (
     <button
-      className={`${buttonStyles} rounded-full border-2 px-6 py-3 text-xl cursor-pointer`}
+      className={`${
+        isSelected
+          ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white border-cyan-400"
+          : "text-gray-300 border-slate-600 hover:border-cyan-400 hover:text-cyan-400"
+      } rounded-full border-2 px-6 py-3 text-xl cursor-pointer transition-all duration-200 transform hover:scale-105`}
       onClick={() => onClick(name)}
     >
       {name}

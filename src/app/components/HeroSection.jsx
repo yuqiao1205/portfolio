@@ -7,115 +7,103 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+    <section id="home" className="py-16 px-4 xl:px-16 relative overflow-hidden min-h-screen flex items-center">
+      {/* Background gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10"></div>
+
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-12 relative z-10">
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className=" mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600"> */}
-
-            {/* Hello, I&apos;m{" "}
-            </span> */}
-
+          <h1 className="mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span
               style={{
-                // background: `-webkit-linear-gradient(left, #9C89B8, #F0A6CA, #EFC3E6, #F0E6EF)`,
-                background: `-webkit-linear-gradient(left, #EDE342, #F2BF6C, #F69A97, #FB76C1, #FF51EB)`,
-
-                // background: `-webkit-linear-gradient(left, #64A6BD, #90A8C3, #ADA7C9, #D7B9D5, #F4CAE0)`,
-                // background: `-webkit-linear-gradient(left, #FFD6FF, #E7C6FF, #C8B6FF, #B8C0FF, #BBD0FF)`,
-                // background: `-webkit-linear-gradient(left, #10E0FF, #0086EB, #006EE9, #FFCD00, #FFEF00)`,
-
+                background: `-webkit-linear-gradient(left, #00FFFF, #8A2BE2, #FF1493, #FF4500, #FFD700)`,
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Hello, I&apos;m{" "}
+              Hello, I'm{" "}
             </span>
-            <br></br>
+            <br />
             <TypeAnimation
               sequence={[
-                "Web Dev",
-                1000,
-                "Backend SWE",
-                1000,
-                "Fullstack SWE",
-                1000,
+                "Web Developer",
+                1500,
+                "Backend Engineer",
+                1500,
+                "Fullstack Developer",
+                1500,
               ]}
               wrapper="span"
-              speed={40}
+              speed={50}
               repeat={Infinity}
-              style={{ fontSize: "35px" }}
+              style={{ fontSize: "35px", display: "inline-block" }}
+              className="bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent"
             />
           </h1>
-          <p className=" text-base sm:text-lg mb-6 lg:text-xl">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-base sm:text-lg mb-6 lg:text-xl text-gray-700 dark:text-gray-300"
+          >
             An energetic and passionate undergraduate CS major student seeking
-            an internship as a software engineer opportunity.
-          </p>
-          <div>
+            internship opportunities as a software engineer. Let's build something amazing together!
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex flex-col sm:flex-row gap-4"
+          >
             <Link
               href="#contact"
-              // className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 mb-4 sm:mb-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+              className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
-              <button className="block  hover:bg-slate-800 rounded-full px-5 py-2">
-                Hire Me
-              </button>
+              Hire Me
             </Link>
-            {/* <a
-              href={resume}
-              download="yan_resume_pink1.1.pdf"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
-            >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download Resume
-              </span>
-            </a> */}
 
             <Link
               href="/images/yan_newresume.pdf"
               download
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 mb-4 sm:mb-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+              className="px-6 py-3 w-full sm:w-fit rounded-full border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black font-semibold transition-all duration-300 transform hover:scale-105"
             >
-              <button className="block hover:bg-slate-800 rounded-full px-5 py-2">
-                Download Resume
-              </button>
+              Download Resume
             </Link>
+
             <Link
               href="https://techblog-pi-opal.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+              className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
-              <button className="block hover:bg-slate-800 rounded-full px-5 py-2">
-                Visit My Tech Blog
-              </button>
+              Visit My Tech Blog
             </Link>
-          </div>
-          <br></br>
-          <br></br>
+          </motion.div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="col-span-4 place-self-center mt-8 lg:mt-0"
         >
-          <div className="rounded-full bg-[#334155] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <img
-              src="images/yanprofile.jpg"
-              alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
-              // className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={330}
-              height={320}
-            />
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-pink-400 rounded-full blur-xl opacity-30 animate-pulse"></div>
+            <div className="relative rounded-full bg-gradient-to-br from-slate-700 to-slate-900 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] border-4 border-cyan-400/20 shadow-2xl">
+              <img
+                src="images/yanprofile.jpg"
+                alt="hero image"
+                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full w-[230px] h-[230px] lg:w-[380px] lg:h-[380px] object-cover border-4 border-cyan-400/30"
+              />
+            </div>
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );
