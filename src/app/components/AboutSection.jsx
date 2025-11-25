@@ -128,7 +128,7 @@ const AboutSection = () => {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-pink-400 rounded-lg blur-xl opacity-30"></div>
           <img
-            src={getImagePath("/images/yandrinking.jpg")}
+            src="images/yandrinking.jpg"
             alt="About me image"
             className="relative rounded-lg shadow-2xl w-full h-auto max-w-md mx-auto md:mx-0"
             width={500}
