@@ -28,7 +28,7 @@ const ProjectImageGallery = ({ imgUrls }) => {
                   backgroundImage: `url(${imgUrl})`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
+                  backgroundPosition: "top center",
                 }}
               ></div>
             </SwiperSlide>

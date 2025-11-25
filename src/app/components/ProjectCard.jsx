@@ -23,7 +23,7 @@ const ProjectCard = ({
                 backgroundImage: `url(${imgUrls[0]})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
+                backgroundPosition: "top center",
               }}
             ></div>
           ) : (
