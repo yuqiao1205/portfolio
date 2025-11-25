@@ -109,6 +109,46 @@ const ProjectDetailPage = ({ params }) => {
               </div>
             </div>
 
+            {/* Features - Only for AI project */}
+            {project.id === 12 && (
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 lg:p-8">
+                <h3 className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4">
+                  Features
+                </h3>
+                <ul className="space-y-2 lg:space-y-3 text-gray-700 dark:text-gray-300 text-sm lg:text-base">
+                  <li className="flex items-start">
+                    <span className="text-lg mr-2">📸</span>
+                    <span><strong>Image Upload:</strong> Upload a photo of a product's ingredient list → OCR extracts text → Ingredients are analyzed.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lg mr-2">🔗</span>
+                    <span><strong>URL Input:</strong> Paste a product page link (e.g., Sephora, Clinique) → Automatically scrape and analyze ingredients.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lg mr-2">📋</span>
+                    <span><strong>Manual Input:</strong> Paste ingredient lists directly for instant analysis.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lg mr-2">🧠</span>
+                    <span><strong>Smart Extraction:</strong> The LLM extracts only ingredients, filtering out non-ingredient text.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lg mr-2">🏷</span>
+                    <span><strong>Product Scoring:</strong> Rates the overall safety of the product.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lg mr-2">📊</span>
+                    <span><strong>Risk Scoring:</strong> Ingredients categorized into: High Risk (e.g., parabens, talc, BHT), Medium Risk (e.g., aluminum salts, PEGs), Low Risk / Safe (commonly used ingredients).</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lg mr-2">📝</span>
+                    <span><strong>Explanations:</strong> Each ingredient includes risk level + impact (e.g., irritation, toxicity, bioaccumulation).</span>
+                  </li>
+                  
+                </ul>
+              </div>
+            )}
+
             {/* Technologies Used */}
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 lg:p-8">
               <h3 className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4">

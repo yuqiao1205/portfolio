@@ -88,6 +88,17 @@ const projectsData = [
     worksUrl: "",
   },
   {
+    id: 12,
+    title: "Agentic AI Cosmetic Ingredient Safety Analyzer - React,javascript, OpenAI, express,Tesseract OCR,Puppeteer, Cheerio.",
+    description:
+      "A modern web application that helps users analyze cosmetic ingredients for safety using AI-powered assessments. Upload product images, paste ingredient lists, or provide URLs to get instant risk evaluations.",
+    imgUrls: ["images/projects/makeuprating/makeuphome.png", "images/projects/makeuprating/makeuptextinput.png", "images/projects/makeuprating/makeupimageinput.png"],
+    tag: ["All", "AI"],
+    gitUrl: "https://github.com/yuqiao1205/cosmetic-ingredient-risk-analyzer",
+    previewUrl: "",
+    worksUrl: "",
+  },
+  {
     id: 2,
     title:
       "Photo Gallery - Nodejs, Express, Javascript, MySQL, Handlebar, CSS, HTML.",
@@ -276,6 +287,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="AI"
+          isSelected={tag === "AI"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

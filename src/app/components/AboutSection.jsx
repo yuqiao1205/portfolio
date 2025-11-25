@@ -55,9 +55,21 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <div className="space-y-2 text-white">
-        <div className="flex items-center">
+        <div className="flex items-center group relative">
           <div className="w-2 h-2 bg-pink-400 rounded-full mr-3"></div>
-          <span>AI Professional Certification</span>
+          <span>IBM RAG and Agentic Al Professional Certification</span>
+          <img src="/images/ibm_certificate.png" alt="IBM Certificate" className="w-8 h-8 ml-3 rounded cursor-pointer" />
+          <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+            <img src="/images/ibm_certificate.png" alt="IBM Certificate Full" className="w-64 h-auto border border-gray-300 rounded shadow-lg" />
+          </div>
+        </div>
+        <div className="flex items-center group relative">
+          <div className="w-2 h-2 bg-pink-400 rounded-full mr-3"></div>
+          <span>Meta Front-End Developer Professional Certification</span>
+          <img src="/images/meta_certificate.png" alt="Meta Certificate" className="w-8 h-8 ml-3 rounded cursor-pointer" />
+          <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+            <img src="/images/meta_certificate.png" alt="Meta Certificate Full" className="w-64 h-auto border border-gray-300 rounded shadow-lg" />
+          </div>
         </div>
         <div className="flex items-center">
           <div className="w-2 h-2 bg-pink-400 rounded-full mr-3"></div>
