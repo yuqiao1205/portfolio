@@ -3,6 +3,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import { getImagePath } from "../utils/getImagePath";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -23,7 +24,7 @@ const ProjectImageGallery = ({ imgUrls }) => {
           {imgUrls.map((imgUrl, index) => (
             <SwiperSlide key={index}>
               <img
-                src={imgUrl}
+                src={getImagePath(imgUrl)}
                 alt={`Project image ${index + 1}`}
                 className="w-full h-full object-cover object-top"
               />
