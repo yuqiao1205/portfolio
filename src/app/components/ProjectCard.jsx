@@ -17,15 +17,11 @@ const ProjectCard = ({
         {/* Project Image Section */}
         <div className="relative overflow-hidden h-40 md:h-56">
           {imgUrls.length > 0 ? (
-            <div
-              className="h-full bg-cover bg-center"
-              style={{
-                backgroundImage: `url(${imgUrls[0]})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "top center",
-              }}
-            ></div>
+            <img
+              src={imgUrls[0]}
+              alt={`${title} image`}
+              className="w-full h-full object-cover object-top"
+            />
           ) : (
             <div className="h-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
               <span className="text-slate-400">No Image</span>

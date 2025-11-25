@@ -22,15 +22,11 @@ const ProjectImageGallery = ({ imgUrls }) => {
         >
           {imgUrls.map((imgUrl, index) => (
             <SwiperSlide key={index}>
-              <div
-                className="h-full bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${imgUrl})`,
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "top center",
-                }}
-              ></div>
+              <img
+                src={imgUrl}
+                alt={`Project image ${index + 1}`}
+                className="w-full h-full object-cover object-top"
+              />
             </SwiperSlide>
           ))}
         </Swiper>
