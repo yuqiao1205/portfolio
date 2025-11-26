@@ -43,20 +43,20 @@ const projectsData = [
       </span>
     ),
     imgUrls: [
-      "images/projects/blog/blog-home5.png",
-      "images/projects/blog/blog-home6.png", // Now we use an array of images
-      "images/projects/blog/blog-add2.png", // Add additional images here
-      "images/projects/blog/blog-single01.png",
-      "images/projects/blog/blog-singlecomment.png",
-      "images/projects/blog/blog-userprofile1.png",
-      "images/projects/blog/blog-updateaccount.png",
-      "images/projects/blog/blog-weather.png",
-      "images/projects/blog/blog-yelpsearch.png",
-      "images/projects/blog/blog-destation.png",
-      "images/projects/blog/blog-chat.png",
-      "images/projects/blog/blog-login.png",
-      "images/projects/blog/blog-theme.png",
-      "images/projects/blog/blog-favorite.png",
+      "/images/projects/blog/blog-home5.png",
+      "/images/projects/blog/blog-home6.png", // Now we use an array of images
+      "/images/projects/blog/blog-add2.png", // Add additional images here
+      "/images/projects/blog/blog-single01.png",
+      "/images/projects/blog/blog-singlecomment.png",
+      "/images/projects/blog/blog-userprofile1.png",
+      "/images/projects/blog/blog-updateaccount.png",
+      "/images/projects/blog/blog-weather.png",
+      "/images/projects/blog/blog-yelpsearch.png",
+      "/images/projects/blog/blog-destation.png",
+      "/images/projects/blog/blog-chat.png",
+      "/images/projects/blog/blog-login.png",
+      "/images/projects/blog/blog-theme.png",
+      "/images/projects/blog/blog-favorite.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/travelwise",
@@ -71,16 +71,16 @@ const projectsData = [
       "EventHub is a web application built using SpringBoot, MyBatis, React, Material UI, and MySQL. It provides full CRUD functionality for managing events, categories, and articles. Users can also update personal settings such as profile pictures, passwords, and other user information. The application is fully responsive, ensuring a seamless experience across different devices.",
 
     imgUrls: [
-      "images/projects/events/event-home.png",
-      "images/projects/events/event-welcome.png", // Now we use an array of images
+      "/images/projects/events/event-home.png",
+      "/images/projects/events/event-welcome.png", // Now we use an array of images
 
-      "images/projects/events/event-article.png", // Add additional images here
-      "images/projects/events/event-userinfo.png",
-      "images/projects/events/event-updatepicture.png",
-      "images/projects/events/event-updatepassword.png",
-      "images/projects/events/event_addcat.png",
-      "images/projects/events/event-addarticle.png",
-      "images/projects/events/event-addwithclock.png",
+      "/images/projects/events/event-article.png", // Add additional images here
+      "/images/projects/events/event-userinfo.png",
+      "/images/projects/events/event-updatepicture.png",
+      "/images/projects/events/event-updatepassword.png",
+      "/images/projects/events/event_addcat.png",
+      "/images/projects/events/event-addarticle.png",
+      "/images/projects/events/event-addwithclock.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/springboot_event",
@@ -92,7 +92,7 @@ const projectsData = [
     title: "Agentic AI Cosmetic Ingredient Safety Analyzer - React,javascript, OpenAI, express,Tesseract OCR,Puppeteer, Cheerio.",
     description:
       "A modern web application that helps users analyze cosmetic ingredients for safety using AI-powered assessments. Upload product images, paste ingredient lists, or provide URLs to get instant risk evaluations.",
-    imgUrls: ["images/projects/makeuprating/makeuphome.png", "images/projects/makeuprating/makeuptextinput.png", "images/projects/makeuprating/makeupimageinput.png"],
+    imgUrls: ["/images/projects/makeuprating/makeuphome.png", "/images/projects/makeuprating/makeuptextinput.png", "/images/projects/makeuprating/makeupimageinput.png"],
     tag: ["All", "AI"],
     gitUrl: "https://github.com/yuqiao1205/cosmetic-ingredient-risk-analyzer",
     previewUrl: "",
@@ -105,13 +105,13 @@ const projectsData = [
     description:
       "The project implements a range of features catering to both unregistered and registered users, including login, register, post images, search, and make comments functionalities. Unregistered users can browse and search for content, while registered users gain additional capabilities such as posting images and making comments. The system offers a seamless and engaging experience, allowing users to interact with the platform's content in a dynamic and user-friendly manner.",
     imgUrls: [
-      "images/projects/imagepost/imagepost-homepage.png",
-      "images/projects/imagepost/imagepost-loginpage.png",
-      "images/projects/imagepost/imagepost-signup.png",
-      "images/projects/imagepost/imagepost-addpost.png",
-      "images/projects/imagepost/imagepost-single.png",
+      "/images/projects/imagepost/imagepost-homepage.png",
+      "/images/projects/imagepost/imagepost-loginpage.png",
+      "/images/projects/imagepost/imagepost-signup.png",
+      "/images/projects/imagepost/imagepost-addpost.png",
+      "/images/projects/imagepost/imagepost-single.png",
     ],
-    // image: "images/projects/imagepost.png",
+    // image: "/images/projects/imagepost.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/photo-site",
     previewUrl: "",
@@ -123,12 +123,12 @@ const projectsData = [
       "Movie Review - Nextjs with IMDB API, responsive design and a dark mode switch.",
     description:
       "The Next.js project uses a 3rd party IMDB API to fetch movie data and enable searching, creating a seamless interface. It includes a section for top-rated and trending movies, offering curated recommendations. The app's responsive design provides a comprehensive movie review platform, allowing users to explore detailed information, ratings, and reviews. Additionally, the app features a dark mode option for enhanced viewing comfort in low-light environments.",
-    // image: "images/projects/moviereview-dark.png",
+    // image: "/images/projects/moviereview-dark.png",
     imgUrls: [
-      "images/projects/movieweb/movieweb-darkhome.png",
-      "images/projects/movieweb/movieweb-lighthome.png",
-      "images/projects/movieweb/movieweb-darksingle.png",
-      "images/projects/movieweb/movieweb-lightsingle.png",
+      "/images/projects/movieweb/movieweb-darkhome.png",
+      "/images/projects/movieweb/movieweb-lighthome.png",
+      "/images/projects/movieweb/movieweb-darksingle.png",
+      "/images/projects/movieweb/movieweb-lightsingle.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/movie-review",
@@ -142,10 +142,10 @@ const projectsData = [
     description:
       "NameThePlace is a cutting-edge mobile app built with React Native and Expo, integrating AI and serverless technologies. With Clerk for secure authentication, the app lets you effortlessly pick a photo from your phone to identify the location. Using advanced AI, it provides detailed information about the place, complete with a map view for easy navigation. Personalize your experience by adding fun emojis to your photos before saving or sharing. PhotoPlace seamlessly combines technology and simplicity, offering a smart way to discover places through your photos",
     imgUrls: [
-      "images/projects/imagephone/imageapp1.png",
-      "images/projects/imagephone/imageapp2.png",
-      "images/projects/imagephone/imageapp3.png",
-      "images/projects/imagephone/imageapp4.png",
+      "/images/projects/imagephone/imageapp1.png",
+      "/images/projects/imagephone/imageapp2.png",
+      "/images/projects/imagephone/imageapp3.png",
+      "/images/projects/imagephone/imageapp4.png",
     ],
     tag: ["All", "Mobile"],
     gitUrl:
@@ -158,10 +158,10 @@ const projectsData = [
     id: 10,
     title: "MovieMate Mobile App - React Native, Expo, TMDB.",
     description:
-      "MovieMate is a mobile app built with React Native that keeps you updated with the latest movies using the TMDB API. Discover what’s currently showing in theaters and get a sneak peek at upcoming releases. With a clean, user-friendly interface, MovieMate provides movie details, ratings, and trailers, making it your go-to app for all things cinema.",
+      "MovieMate is a mobile app built with React Native that keeps you updated with the latest movies using the TMDB API. Discover what's currently showing in theaters and get a sneak peek at upcoming releases. With a clean, user-friendly interface, MovieMate provides movie details, ratings, and trailers, making it your go-to app for all things cinema.",
     imgUrls: [
-      "images/projects/movie_mobileapp/movie_review.png",
-      "images/projects/movie_mobileapp/moviemobile001.png",
+      "/images/projects/movie_mobileapp/movie_review.png",
+      "/images/projects/movie_mobileapp/moviemobile001.png",
     ],
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/yuqiao1205/movie-mobile-app",
@@ -176,8 +176,8 @@ const projectsData = [
     description:
       "The project encompasses the implementation of a brick game with features such as point calculation, increasing ball speeds for each level, and progressing to the next level upon eliminating all blocks. Keyboard and mouse controls are integrated into the game, enhancing user interaction and gameplay experience. The game's design focuses on providing engaging gameplay while challenging players with progressively difficult levels, ensuring an enjoyable and immersive gaming experience. ",
     imgUrls: [
-      "images/projects/brickgame/brickgame-home.png",
-      "images/projects/brickgame/brickgame-login.png",
+      "/images/projects/brickgame/brickgame-home.png",
+      "/images/projects/brickgame/brickgame-login.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/brickgame",
@@ -190,9 +190,9 @@ const projectsData = [
     description:
       "The project involves implementing an infix expression evaluator using Java, with a focus on essential mathematical functions and utilizing two stacks. Additionally, a Java Swing GUI is created to provide a user-friendly interface for calculator input. This approach allows users to input complex mathematical expressions in infix notation, which are then evaluated accurately. The project enhances user experience by providing a visually appealing and intuitive way to perform calculations. ",
     imgUrls: [
-      "images/projects/calculator/calexample01.png",
-      "images/projects/calculator/calexample02.png",
-      "images/projects/calculator/calculator.png",
+      "/images/projects/calculator/calexample01.png",
+      "/images/projects/calculator/calexample02.png",
+      "/images/projects/calculator/calculator.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/csc413-ex-1-calculator",
@@ -205,9 +205,9 @@ const projectsData = [
     description:
       "This Spring Boot application manages users with CRUD operations, utilizing a MySQL database and a React frontend. It enables creating, reading, updating, and deleting user accounts, ensuring efficient user data management. The React frontend provides a user-friendly interface for seamless interaction with the system.",
     imgUrls: [
-      "images/projects/rating/ratinghome001.png",
-      "images/projects/rating/ratingadd001.png",
-      "images/projects/rating/ratingupdate001.png",
+      "/images/projects/rating/ratinghome001.png",
+      "/images/projects/rating/ratingadd001.png",
+      "/images/projects/rating/ratingupdate001.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -219,7 +219,7 @@ const projectsData = [
     title: "Handwritten Digit Recognition - Deep Learning Model using Pytorch.",
     description:
       "The project involves developing and evaluating a Convolutional Neural Network (CNN) model for classifying handwritten digits from the well-known MNIST dataset. The CNN is trained to accurately recognize and classify the digits, showcasing its ability to effectively handle image classification tasks.",
-    imgUrls: ["images/projects/handwritting1.png"],
+    imgUrls: ["/images/projects/handwritting1.png"],
     tag: ["All", "DL"],
     gitUrl: "https://github.com/yuqiao1205/handwriting-app",
     previewUrl: "",
@@ -230,7 +230,7 @@ const projectsData = [
     title: "Banking System - Java Application for Banking System.",
     description:
       "The project encompasses the implementation of a banking system featuring checking and savings accounts, as well as cash deposit functionality. It allows users to create various types of accounts, reset account details, view account information, and perform withdrawals. The project leverages JavaFX to create a user-friendly graphical interface for input, enhancing the overall user experience ",
-    imgUrls: ["images/projects/bankaccount/banksystem.png"],
+    imgUrls: ["/images/projects/bankaccount/banksystem.png"],
     tag: ["All", "Web"],
     gitUrl:
       "https://github.com/yuqiao1205/advancedjava/tree/main/assigment1/BankingSystem/src",
