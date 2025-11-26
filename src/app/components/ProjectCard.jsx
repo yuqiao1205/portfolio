@@ -16,41 +16,49 @@ const ProjectCard = ({
     <div className="max-w-sm mx-auto group">
       <div className="bg-gradient-to-br from-cyan-200 to-pink-200 dark:from-slate-800 dark:to-slate-900 backdrop-blur-sm rounded-xl border border-cyan-300 dark:border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
         {/* Project Image Section */}
-        <div className="relative overflow-hidden h-40 md:h-56">
-          {imgUrls.length > 0 ? (
-            <img
-              src={getImagePath(imgUrls[0])}
-              alt={`${title} image`}
-              className="w-full h-full object-cover object-top"
-            />
-          ) : (
-            <div className="h-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
-              <span className="text-slate-400">No Image</span>
-            </div>
-          )}
-
-          {/* Overlay with icons */}
-          <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <Link
-              href={gitUrl}
-              className="p-2 bg-black/50 backdrop-blur-sm rounded-full border border-cyan-400/30 hover:border-cyan-400 transition-colors duration-200"
-            >
-              <CodeBracketIcon className="h-5 w-5 text-cyan-400" />
-            </Link>
-            {previewUrl ? (
-              <Link
-                href={previewUrl}
-                className="p-2 bg-black/50 backdrop-blur-sm rounded-full border border-cyan-400/30 hover:border-cyan-400 transition-colors duration-200"
-              >
-                <EyeIcon className="h-5 w-5 text-cyan-400" />
-              </Link>
+        <Link href={`/projects/${id}`}>
+          <div className="relative overflow-hidden h-40 md:h-56 cursor-pointer">
+            {imgUrls.length > 0 ? (
+              <img
+                src={getImagePath(imgUrls[0])}
+                alt={`${title} image`}
+                className="w-full h-full object-cover object-top"
+              />
             ) : (
-              <div className="p-2 bg-black/50 backdrop-blur-sm rounded-full border border-slate-500/30">
-                <span className="text-xs text-slate-400">Soon</span>
+              <div className="h-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
+                <span className="text-slate-400">No Image</span>
               </div>
             )}
+
+            {/* Overlay with icons */}
+            <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div
+                className="p-2 bg-black/50 backdrop-blur-sm rounded-full border border-cyan-400/30 hover:border-cyan-400 transition-colors duration-200"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(gitUrl, '_blank');
+                }}
+              >
+                <CodeBracketIcon className="h-5 w-5 text-cyan-400" />
+              </div>
+              {previewUrl ? (
+                <div
+                  className="p-2 bg-black/50 backdrop-blur-sm rounded-full border border-cyan-400/30 hover:border-cyan-400 transition-colors duration-200"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(previewUrl, '_blank');
+                  }}
+                >
+                  <EyeIcon className="h-5 w-5 text-cyan-400" />
+                </div>
+              ) : (
+                <div className="p-2 bg-black/50 backdrop-blur-sm rounded-full border border-slate-500/30">
+                  <span className="text-xs text-slate-400">Soon</span>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        </Link>
 
         {/* Project Details Section */}
         <div className="p-6">
