@@ -3,6 +3,7 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import TabButton from "./TabButton";
+import { getImagePath } from "../utils/basePath";
 
 const TAB_DATA = [
   {
@@ -59,17 +60,17 @@ const TAB_DATA = [
         <div className="flex items-center group relative">
           <div className="w-2 h-2 bg-pink-400 rounded-full mr-3"></div>
           <span>IBM RAG and Agentic Al Professional Certification</span>
-          <img src="/images/ibm_certificate.png" alt="IBM Certificate" className="w-8 h-8 ml-3 rounded cursor-pointer" />
+          <img src={getImagePath("/images/ibm_certificate.png")} alt="IBM Certificate" className="w-8 h-8 ml-3 rounded cursor-pointer" />
           <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
-            <img src="/images/ibm_certificate.png" alt="IBM Certificate Full" className="w-64 h-auto border border-gray-300 rounded shadow-lg" />
+            <img src={getImagePath("/images/ibm_certificate.png")} alt="IBM Certificate Full" className="w-64 h-auto border border-gray-300 rounded shadow-lg" />
           </div>
         </div>
         <div className="flex items-center group relative">
           <div className="w-2 h-2 bg-pink-400 rounded-full mr-3"></div>
           <span>Meta Front-End Developer Professional Certification</span>
-          <img src="/images/meta_certificate.png" alt="Meta Certificate" className="w-8 h-8 ml-3 rounded cursor-pointer" />
+          <img src={getImagePath("/images/meta_certificate.png")} alt="Meta Certificate" className="w-8 h-8 ml-3 rounded cursor-pointer" />
           <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
-            <img src="/images/meta_certificate.png" alt="Meta Certificate Full" className="w-64 h-auto border border-gray-300 rounded shadow-lg" />
+            <img src={getImagePath("/images/meta_certificate.png")} alt="Meta Certificate Full" className="w-64 h-auto border border-gray-300 rounded shadow-lg" />
           </div>
         </div>
         <div className="flex items-center">
@@ -127,7 +128,7 @@ const AboutSection = () => {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-pink-400 rounded-lg blur-xl opacity-30"></div>
           <img
-            src="/images/yandrinking.jpg"
+            src={getImagePath("/images/yandrinking.jpg")}
             alt="About me image"
             className="relative rounded-lg shadow-2xl w-full h-auto max-w-md mx-auto md:mx-0"
             width={500}
