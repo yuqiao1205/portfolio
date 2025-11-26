@@ -103,9 +103,9 @@ const projectsData = [
       "/images/projects/makeuprating/makeupimageinput.png",
     ],
     tag: ["All", "AI"],
-    gitUrl: "https://github.com/yuqiao1205/vercel-makeup-rating",
-    previewUrl: "",
-    worksUrl: "",
+    gitUrl: "https://github.com/yuqiao1205/AI-safe-beauty",
+    previewUrl: "https://ai-safe-beauty.vercel.app/",
+    worksUrl: "https://ai-safe-beauty.vercel.app/",
   },
   {
     id: 2,
