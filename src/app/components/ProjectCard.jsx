@@ -1,7 +1,6 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { getImagePath } from "../utils/getImagePath";
 
 const ProjectCard = ({
   id,
@@ -19,7 +18,7 @@ const ProjectCard = ({
         <div className="relative overflow-hidden h-40 md:h-56">
           {imgUrls.length > 0 ? (
             <img
-              src={getImagePath(imgUrls[0])}
+              src={imgUrls[0]}
               alt={`${title} image`}
               className="w-full h-full object-cover object-top"
             />
