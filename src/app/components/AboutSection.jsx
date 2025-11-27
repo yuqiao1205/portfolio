@@ -125,15 +125,27 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-16 px-4 xl:px-16">
       <div className="md:grid md:grid-cols-2 gap-8 items-center">
-        <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-pink-400 rounded-lg blur-xl opacity-30"></div>
-          <img
-            src={getImagePath("/images/yandrinking.jpg")}
-            alt="About me image"
-            className="relative rounded-lg shadow-2xl w-full h-auto max-w-md mx-auto md:mx-0"
-            width={500}
-            height={500}
-          />
+        <div className="relative flex flex-col items-center gap-12">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-pink-400 rounded-lg blur-xl opacity-30"></div>
+            <img
+              src={getImagePath("/images/yandrinking.jpg")}
+              alt="About me image 1"
+              className="relative rounded-lg shadow-2xl w-full h-auto max-w-sm mx-auto border-4 border-cyan-300/50"
+              width={400}
+              height={400}
+            />
+          </div>
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-purple-400 rounded-2xl blur-xl opacity-30"></div>
+            <img
+              src={getImagePath("/images/aboutmecs.jpg")}
+              alt="About me image 2"
+              className="relative rounded-2xl shadow-2xl w-full h-auto max-w-sm mx-auto border-4 border-pink-300/50"
+              width={350}
+              height={350}
+            />
+          </div>
         </div>
         <div className="mt-8 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent">
