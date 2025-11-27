@@ -19,14 +19,14 @@ const ProjectImageGallery = ({ imgUrls }) => {
           loop={true}
           navigation
           pagination={{ clickable: true }}
-          className="aspect-video"
+          className="aspect-[4/3]"
         >
           {imgUrls.map((imgUrl, index) => (
             <SwiperSlide key={index}>
               <img
                 src={getImagePath(imgUrl)}
                 alt={`Project image ${index + 1}`}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-contain"
               />
             </SwiperSlide>
           ))}

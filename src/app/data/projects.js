@@ -78,29 +78,47 @@ const projectsData = [
   },
   {
     id: 12,
-    title: "Cosmetic Ingredient Safety Analyzer - React, OpenAI, Nodejs, Express, Tesseract(OCR for image text extraction), Puppeteer(Headless browser for web scraping), Cheerio.",
+    title: "AI-safe-beauty - Next.js 14, React 18, Node.js, OpenRouter API, Grok Models, GPT-4o, Puppeteer.",
     description: (
       <span>
-        A modern web application that helps users analyze cosmetic ingredients for safety using AI-powered assessments. Upload product images, paste ingredient lists, or provide URLs to get instant risk evaluations.
+  
+        AI-safe-beauty is a web application that leverages artificial intelligence to analyze cosmetic products and assess their safety based on ingredient composition. The app provides instant risk assessments by categorizing ingredients into high, medium, and low-risk categories, along with an overall safety score and detailed explanations.
         <br /><br />
-        <strong>Frontend:</strong><br />
-        React 18 - Modern UI framework<br />
-        Vite - Fast build tool and dev server<br />
-        CSS3 - Custom styling with modern design patterns<br />
+        <strong>Features</strong><br />
+        🔍 <strong>Multi-Input Analysis</strong><br />
+        • Text Analysis: Paste ingredient lists directly for instant safety evaluation<br />
+        • Image Recognition: Upload product photos to automatically extract and analyze ingredients using AI-powered OCR<br />
+        • URL Scanning: Provide product page URLs for comprehensive web scraping and analysis<br />
         <br />
-        <strong>Backend:</strong><br />
-        Node.js - Runtime environment<br />
-        Express.js - Web framework<br />
-        OpenAI API - AI-powered ingredient analysis<br />
-        Tesseract.js - OCR for image text extraction<br />
-        Puppeteer - Headless browser for web scraping<br />
-        Cheerio - HTML parsing and data extraction
+        🧪 <strong>Intelligent Risk Assessment</strong><br />
+        • Three-Tier Risk Classification: High, Medium, and Low risk categories<br />
+        • Overall Safety Score: Excellent, Fair, or Poor ratings<br />
+        • Detailed Explanations: AI-generated insights for each ingredient's safety profile<br />
+        • Expert Analysis: Powered by advanced language models trained on cosmetic safety data<br />
+        <br />
+  
+        <strong>Tech Stack</strong><br />
+        Next.js 14 - React framework for production<br />
+        React 18 - UI library with modern hooks<br />
+        CSS Modules - Component-scoped styling<br />
+        Node.js - Server-side JavaScript runtime<br />
+        Next.js API Routes - Serverless API endpoints<br />
+        <br />
+        <strong>AI & Machine Learning</strong><br />
+        OpenRouter API - Multi-model AI platform<br />
+        Grok Models - xAI's advanced language models for ingredient analysis<br />
+        GPT-4o - OpenAI's vision model for image text extraction<br />
+        <br />
+        <strong>Web Scraping & Automation</strong><br />
+        Puppeteer - Headless browser automation<br />
+        Puppeteer Extra Stealth Plugin - Anti-detection measures for web scraping
       </span>
     ),
     imgUrls: [
       "/images/projects/makeuprating/makeuphome.png",
       "/images/projects/makeuprating/makeuptextinput.png",
-      "/images/projects/makeuprating/makeupimageinput.png",
+      "/images/projects/makeuprating/makeupgood.png",
+      "/images/projects/makeuprating/makeuphighrisk.png",
     ],
     tag: ["All", "AI"],
     gitUrl: "https://github.com/yuqiao1205/AI-safe-beauty",

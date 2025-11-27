@@ -17,7 +17,7 @@ const ProjectCard = ({
       <div className="bg-gradient-to-br from-cyan-200 to-pink-200 dark:from-slate-800 dark:to-slate-900 backdrop-blur-sm rounded-xl border border-cyan-300 dark:border-slate-700 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
         {/* Project Image Section */}
         <Link href={`/projects/${id}`}>
-          <div className="relative overflow-hidden h-40 md:h-56 cursor-pointer">
+          <div className="relative overflow-hidden h-48 md:h-64 cursor-pointer">
             {imgUrls.length > 0 ? (
               <img
                 src={getImagePath(imgUrls[0])}
