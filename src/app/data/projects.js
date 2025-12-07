@@ -77,6 +77,45 @@ const projectsData = [
     worksUrl: "",
   },
   {
+    id: 13,
+    title: "Lauren's YouTube Video Summarizer & Q&A - Next.js 16, React 19, TypeScript, OpenRouter API, LangChain, Tailwind CSS 4",
+    description: (
+      <span>
+
+        An AI-powered web application that allows users to summarize YouTube videos and ask questions about their content using advanced language models
+        <br /><br />
+        🚀 <strong>Features</strong><br />
+
+        • Video Summarization: Generate concise summaries of YouTube videos in English or Chinese<br />
+        • Q&A Functionality: Ask questions about video content and receive AI-generated answers<br />
+        • Language Support: Choose between English and Chinese for summaries and responses<br />
+        • User-Friendly Interface: Clean, responsive design with intuitive controls<br />
+        • Download & copy Summaries: Easily download or copy generated summaries for offline reference<br />
+        • Model Selection: Choose from multiple AI LLMs to enhance summarization and Q&A capabilities<br />
+        <br /><br />
+        🧪 <strong>Tech Stack</strong><br />
+        • Next.js 16 - React framework for production<br />
+        • React 19 - UI library with modern hooks<br />
+        • TypeScript - Type-safe JavaScript<br />
+        • Tailwind CSS 4 - Utility-first CSS framework<br />
+        • OpenRouter API - Multi-model AI platform<br />
+        <br /><br />
+
+    
+      </span>
+    ),
+    imgUrls: [
+      "/images/projects/youtube/ythomepage2.png",
+      "/images/projects/youtube/ythomepage.png",
+      "/images/projects/youtube/display.png",
+      "/images/projects/youtube/ythomepage_responsive.png",
+    ],
+    tag: ["All", "AI"],
+    gitUrl: "https://github.com/yuqiao1205/youtube_video_summarizer_qa",
+    previewUrl: "https://youtube-video-summarizer-qa.vercel.app/",
+    worksUrl: "https://youtube-video-summarizer-qa.vercel.app/",
+  },
+  {
     id: 12,
     title: "AI-safe-beauty - Next.js 14, React 18, Node.js, OpenRouter API, Grok Models, GPT-4o, Puppeteer.",
     description: (
