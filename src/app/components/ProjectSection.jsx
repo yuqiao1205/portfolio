@@ -31,7 +31,7 @@ const ProjectsSection = () => {
           My Projects
         </h2>
         <p className="text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
-          A showcase of my work across web development, mobile apps, and machine learning projects.
+          A showcase of my work across web development, AI applications, mobile apps, and machine learning projects.
         </p>
       </div>
       <div className="flex flex-wrap justify-center items-center gap-2 mb-12">
