@@ -74,7 +74,7 @@ const ProjectCard = ({
               View Live Demo
             </Link>
           )}
-          <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 line-clamp-3">{description}</p>
+          <div className="text-sm md:text-base text-gray-700 dark:text-gray-300 line-clamp-3">{description}</div>
         </div>
       </div>
     </div>
