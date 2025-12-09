@@ -1,4 +1,5 @@
 import TravelWiseFeatures from '../components/TravelWiseFeatures';
+import EventHubFeatures from '../components/EventHubFeatures';
 
 const projectsData = [
   {
@@ -64,8 +65,15 @@ const projectsData = [
   {
     id: 11,
     title: "EventHub - SpringBoot, Mybatis, React, Material UI, MySQL.",
-    description:
-      "EventHub is a web application built using SpringBoot, MyBatis, React, Material UI, and MySQL. It provides full CRUD functionality for managing events, categories, and articles. Users can also update personal settings such as profile pictures, passwords, and other user information. The application is fully responsive, ensuring a seamless experience across different devices.",
+    description: (
+      <div>
+        <p>
+          EventHub is a web application built using SpringBoot, MyBatis, React, Material UI, and MySQL. It provides full CRUD functionality for managing events, categories, and articles. Users can also update personal settings such as profile pictures, passwords, and other user information. The application is fully responsive, ensuring a seamless experience across different devices.
+        </p>
+        
+        <EventHubFeatures />
+      </div>
+    ),
     imgUrls: [
       "/images/projects/events/event-home.png",
       "/images/projects/events/event-welcome.png",
@@ -144,18 +152,8 @@ const projectsData = [
         • Expert Analysis: Powered by advanced language models trained on cosmetic safety data<br />
         <br />
   
-        <strong>Tech Stack</strong><br />
-        Next.js 14 - React framework for production<br />
-        React 18 - UI library with modern hooks<br />
-        CSS Modules - Component-scoped styling<br />
-        Node.js - Server-side JavaScript runtime<br />
-        Next.js API Routes - Serverless API endpoints<br />
-        <br />
-        <strong>AI & Machine Learning</strong><br />
-        OpenRouter API - Multi-model AI platform<br />
-        Grok Models - xAI's advanced language models for ingredient analysis<br />
-        GPT-4o - OpenAI's vision model for image text extraction<br />
-        <br />
+        🚀 <strong>Special technologies</strong><br />
+  
         <strong>Web Scraping & Automation</strong><br />
         Puppeteer - Headless browser automation<br />
         Puppeteer Extra Stealth Plugin - Anti-detection measures for web scraping
