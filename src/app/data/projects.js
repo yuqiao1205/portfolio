@@ -62,6 +62,49 @@ const projectsData = [
     previewUrl: "",
     worksUrl: "",
   },
+  // add new project here calls survery web app
+  {
+    id: 14,
+    title: "SurveyHub - TypeScript, Next.js, MongoDB, Tailwind CSS, Recharts, Vercel.",
+    description: (
+      <div>
+        <p>
+                  Survey App is a modern survey management system built with Next.js, MongoDB, and TypeScript. It provides a complete platform for creating, managing, and analyzing surveys. The system includes secure user authentication, an intuitive admin dashboard, flexible survey creation tools, and real-time data visualization for survey results.
+              </p>
+                
+        <br /><br />
+        <strong>Features</strong><br />
+        <strong>User Features</strong><br />
+        📝 Browse and complete available surveys<br />
+        ✅ Single choice, multiple choice, and text answer questions<br />
+        🔒 One response per survey per user<br /><br></br>
+   
+        <strong>Admin Features</strong><br />
+        🎨 Create and edit surveys with flexible question types<br />
+        📈 View real-time survey results with charts<br />
+        📊 Data visualization using Recharts<br />
+        🗑️ Delete surveys and manage content<br />
+        👥 Full CRUD operations on surveys<br />
+                
+       
+      </div>
+    ),
+    imgUrls: [
+      "/images/projects/survey_app/surveyhomepage.png",
+      "/images/projects/survey_app/surveylogin.png",
+      "/images/projects/survey_app/surveyregister.png",
+      "/images/projects/survey_app/admindashboard.png",
+      "/images/projects/survey_app/adminresults.png",
+      "/images/projects/survey_app/create_survey.png",
+      "/images/projects/survey_app/userpage.png",
+      "/images/projects/survey_app/usersurveypage.png",
+   
+    ],
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/yuqiao1205/surveys_app",
+    previewUrl: "https://surveyhub-eta.vercel.app/",
+    worksUrl: "https://surveyhub-eta.vercel.app/",
+  },
   {
     id: 11,
     title: "EventHub - SpringBoot, Mybatis, React, Material UI, MySQL.",

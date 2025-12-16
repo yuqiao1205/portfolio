@@ -18,10 +18,14 @@ const navLinks = [
     title: "Contact",
     path: "#contact",
   },
-   {
-     title: "TechFlow",
-     path: "https://techblog-pi-opal.vercel.app/",
-   },
+  {
+    title: "TechFlow",
+    path: "https://techblog-pi-opal.vercel.app/",
+  },
+  {
+    title: "ArtWorks",
+    path: "https://image-gallery-chi-murex.vercel.app/",
+  },
 ];
 
 const Navbar = () => {

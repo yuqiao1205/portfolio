@@ -93,6 +93,15 @@ const HeroSection = () => {
             >
               Visit My Tech Blog
             </Link>
+
+            <Link
+              href="https://image-gallery-chi-murex.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              My Image Gallery
+            </Link>
           </motion.div>
         </motion.div>
         <motion.div
