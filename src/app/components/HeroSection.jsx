@@ -90,7 +90,7 @@ const HeroSection = () => {
                   rel="noopener noreferrer"
                   className="flex-1 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 px-5 py-4 text-center text-sm font-semibold text-white shadow-lg transition-all"
                 >
-                  View Image Gallery ↗
+                  View My Art Works ↗
                 </Link>
               </div>
             </div>
