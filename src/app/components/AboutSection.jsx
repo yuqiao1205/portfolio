@@ -137,8 +137,8 @@ const AboutSection = () => {
               detail: "Academic & freelance builds"
             }, {
               label: "Shipped projects",
-              value: "30+",
-              detail: "From SaaS dashboards to mobile"
+              value: "10+",
+              detail: "From web app to mobile"
             }, {
               label: "Tech focus",
               value: "Fullstack",
@@ -162,7 +162,7 @@ const AboutSection = () => {
           <div className="rounded-2xl border border-slate-200/30 dark:border-slate-700/60 bg-gradient-to-br from-slate-900/80 to-slate-800/60 p-6 text-gray-100 shadow-xl">
             <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-3">Currently exploring</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-              <li className="flex items-start gap-2"><span className="text-pink-400">▹</span>Agentic workflows that blend OpenAI APIs with event-driven backends</li>
+              <li className="flex items-start gap-2"><span className="text-pink-400">▹</span>Agentic workflows that integrate AI APIs with event-driven backends</li>
               <li className="flex items-start gap-2"><span className="text-pink-400">▹</span>Performant UI systems that adapt across desktop, tablet, and mobile</li>
               <li className="flex items-start gap-2"><span className="text-pink-400">▹</span>Observability stacks that keep solo projects production-ready</li>
               <li className="flex items-start gap-2"><span className="text-pink-400">▹</span>Inclusive product storytelling through photography and UI copy</li>
