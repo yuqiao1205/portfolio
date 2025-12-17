@@ -158,7 +158,7 @@ const ProjectDetailPage = ({ params }) => {
             <div className="rounded-[32px] border border-white/60 dark:border-slate-800/80 bg-white/90 dark:bg-slate-900/60 shadow-xl backdrop-blur-xl p-8 space-y-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Project Overview</h2>
               <div className="prose prose-base lg:prose-lg max-w-none text-gray-700 dark:text-gray-300 dark:prose-invert">
-                {typeof project.description === "string" ? <p>{project.description}</p> : project.description}
+                {project.detailedDescription || (typeof project.description === "string" ? <p>{project.description}</p> : project.description)}
               </div>
             </div>
 

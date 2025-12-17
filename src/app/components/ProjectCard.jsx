@@ -14,10 +14,7 @@ const ProjectCard = ({
 }) => {
   const hasRepo = gitUrl && gitUrl !== "/";
   const liveHref = worksUrl || previewUrl || "";
-  const previewCopy =
-    typeof description === "string"
-      ? description
-      : "Explore the full case study for architecture decisions, feature breakdowns, and lessons learned.";
+  const previewCopy = description;
 
   return (
     <div className="group relative flex h-full flex-col rounded-[28px] border border-white/50 dark:border-slate-800/80 bg-white/80 dark:bg-slate-900/40 shadow-xl shadow-cyan-500/5 dark:shadow-black/40 overflow-hidden backdrop-blur-lg transition-all duration-300 hover:-translate-y-1">
@@ -49,7 +46,7 @@ const ProjectCard = ({
           <p className="text-xs uppercase tracking-[0.35em] text-cyan-500">Featured Build</p>
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mt-1 leading-tight line-clamp-2">{title}</h3>
         </div>
-        <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">{previewCopy}</p>
+        <div className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">{previewCopy}</div>
 
         <div className="flex items-center justify-between text-xs uppercase tracking-[0.3em] text-gray-500 dark:text-gray-400">
           <span>{hasRepo ? "Open Source" : "Private Repo"}</span>
