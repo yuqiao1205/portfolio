@@ -638,13 +638,13 @@ const projectsData = [
       </div>
     ),
     imgUrls: [
-      "/images/projects/brickgame/brickgame-home.png",
-      "/images/projects/brickgame/brickgame-login.png",
+      "/images/projects/brickgame/brickgame1.png",
+      "/images/projects/brickgame/brickgame2.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/brickgame",
-    previewUrl: "https://brickgame-two.vercel.app/",
-    worksUrl: "https://brickgame-two.vercel.app/",
+    previewUrl: "https://mybrickgame.vercel.app/",
+    worksUrl: "https://mybrickgame.vercel.app/",
   },
   {
     id: 6,
