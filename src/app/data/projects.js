@@ -412,7 +412,7 @@ const projectsData = [
               <p className="font-semibold text-cyan-400">🛠️ Tech Stack</p>
               <span>
                 • Next.js - React framework<br />
-                • IMDB API - Movie data source<br />
+                • TMDB API - Movie data source<br />
                 • CSS/Tailwind - Styling<br />
                 • Vercel - Deployment
               </span>
@@ -422,10 +422,15 @@ const projectsData = [
       </div>
     ),
     imgUrls: [
-      "/images/projects/movieweb/movieweb-darkhome.png",
-      "/images/projects/movieweb/movieweb-lighthome.png",
-      "/images/projects/movieweb/movieweb-darksingle.png",
-      "/images/projects/movieweb/movieweb-lightsingle.png",
+      "/images/projects/movieweb/moviehomepage.png",
+      "/images/projects/movieweb/moviehomepage2.png",
+      "/images/projects/movieweb/moviesinglepage.png",
+      "/images/projects/movieweb/moviesearchresult.png",
+   
+      "/images/projects/movieweb/movieipad.png",
+         "/images/projects/movieweb/movieabout.png",
+      "/images/projects/movieweb/movielightmode.png",
+      "/images/projects/movieweb/movielightsingle.png",
     ],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuqiao1205/movie-review",
