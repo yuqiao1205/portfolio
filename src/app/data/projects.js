@@ -220,16 +220,94 @@ const projectsData = [
       </div>
     ),
     imgUrls: [
-      "/images/projects/youtube/homepage_01.png",
-      "/images/projects/youtube/homepage_02.png",
-      "/images/projects/youtube/result.png",
-      "/images/projects/youtube/summary_qa.png",
-      "/images/projects/youtube/summary.png",
+      "/images/projects/youtube/yt-homepage01.png",
+      "/images/projects/youtube/yt-summary-en.png",
+      "/images/projects/youtube/yt-ch2.png",
+      "/images/projects/youtube/yt-ch.png",
+      "/images/projects/youtube/yt-qa.png",
+      "/images/projects/youtube/yt-searchpage.png",
+      "/images/projects/youtube/yt-foot.png",
     ],
     tag: ["All", "AI"],
     gitUrl: "https://github.com/yuqiao1205/youtube_video_summarizer_qa",
     previewUrl: "https://youtube-video-summarizer-qa.vercel.app/",
     worksUrl: "https://youtube-video-summarizer-qa.vercel.app/",
+  },
+  {
+    id: 15,
+    title: "Lauren's SnapSummary - Next.js, OpenRouter API, Tailwind CSS, Web Content Summarization",
+    description:
+      "Summarize website content (via URL) or pasted text, choose different LLM models, and output in English or Chinese with one-click copy/download.",
+    detailedDescription: (
+      <div>
+        <p>
+          Lauren&apos;s SnapSummary is a lightweight AI summarization tool that can summarize webpages (by URL)
+          or raw text input. It supports selecting different LLMs, generating summaries in English or Chinese,
+          and exporting results via copy-to-clipboard or download.
+        </p>
+
+        <div className="mt-4">
+          <p className="font-bold">🚀 Features</p>
+          <p style={{ color: "#fbbf24" }} className="mb-4">
+            Fast summarization with flexible model + language controls.
+          </p>
+
+          <div className="space-y-3">
+            <div>
+              <p className="font-semibold text-cyan-400">🔗 Multi-Input Summarization</p>
+              <span>
+                • URL summarization: paste a webpage link and generate a concise summary<br />
+                • Text summarization: paste text directly for instant summarization
+              </span>
+            </div>
+
+            <div>
+              <p className="font-semibold text-cyan-400">🤖 Model Selection</p>
+              <span>
+                • Choose from multiple LLM providers/models via OpenRouter<br />
+                • Easily switch models depending on speed, quality, and cost
+              </span>
+            </div>
+
+            <div>
+              <p className="font-semibold text-cyan-400">🌐 Language Output</p>
+              <span>
+                • Generate summaries in English or Chinese<br />
+                • Translation-friendly output for quick cross-language reading
+              </span>
+            </div>
+
+            <div>
+              <p className="font-semibold text-cyan-400">📄 Export</p>
+              <span>
+                • Copy summary to clipboard<br />
+                • Download summary for offline use
+              </span>
+            </div>
+
+            <div>
+              <p className="font-semibold text-cyan-400">🛠️ Tech Stack</p>
+              <span>
+                • Next.js - React framework for production<br />
+                • OpenRouter API - Multi-model LLM support<br />
+                • Tailwind CSS - UI styling
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    ),
+    imgUrls: ["/images/projects/pagesnap/pagesnap-home.png",
+      "/images/projects/pagesnap/summary01.png",
+      "/images/projects/pagesnap/summary02.png",
+      "/images/projects/pagesnap/summary03.png",
+      "/images/projects/pagesnap/summary04.png",
+      "/images/projects/pagesnap/summary05.png"
+    ],
+    tag: ["All", "AI"],
+    gitUrl: "https://github.com/yuqiao1205/webpage-summarizer",
+    previewUrl: "https://pagesnap-beige.vercel.app/",
+    worksUrl: "https://pagesnap-beige.vercel.app/",
   },
   {
     id: 12,
