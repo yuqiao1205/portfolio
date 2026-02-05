@@ -85,7 +85,7 @@ const HeroSection = () => {
                   Visit My Tech Blog ↗
                 </Link>
                 <Link
-                  href="https://image-gallery-chi-murex.vercel.app/"
+                  href="https://artwork-hub.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 px-5 py-4 text-center text-sm font-semibold text-white shadow-lg transition-all"
